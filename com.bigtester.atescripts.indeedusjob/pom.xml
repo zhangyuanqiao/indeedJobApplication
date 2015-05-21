@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.bigtester</groupId>
+  <artifactId>com.bigtester.atescripts.indeedusjob</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>com.bigtester.atescripts.indeedusjob</name>
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+ <repositories>
+    <repository>
+        <id>repo-id</id>
+        <name>repo-name</name>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </repository>
+</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.bigtester</groupId>
+			<artifactId>org.bigtester.ate.core</artifactId>
+			<version>0.0.7-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.1.1</version>
+				<executions>
+					<execution>
+						<phase>install</phase>
+<!-- 						<goals> -->
+<!-- 							<goal>exec</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<mainClass>org.bigtester.ate.TestProjectRunner</mainClass> -->
+<!-- 							<arguments> -->
+							
+<!-- 								<argument>indeedJobApplication/testproject.xml</argument> -->
+								
+<!-- 							</arguments> -->
+<!-- 						</configuration> -->
+						<goals>
+							<goal>exec</goal>
+						</goals>
+	<configuration>
+          <executable>java</executable>
+          <arguments>
+            <argument>-classpath</argument>
+            <!-- automatically creates the classpath using all project dependencies,
+                 also adding the project build directory -->
+            <classpath/>
+            <argument>-Xms120m</argument>
+            
+            <argument> -Xmx2048m</argument>
+            <argument> -XX:MaxPermSize=1024m</argument>
+           
+             <argument> org.bigtester.ate.TestProjectRunner</argument>
+            <argument>indeedJobApplication/testproject.xml</argument>
+          </arguments>
+        </configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:ate="http://www.bigtester.org/schema/ate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+                           http://www.springframework.org/schema/aop 
+                           http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                           http://www.bigtester.org/schema/ate 
+                           http://www.bigtester.org/schema/ate/ate-2.0.xsd">
+
+	<!-- this registers beans annotated with @Aspect -->
+	<aop:aspectj-autoproxy />
+
+	<import resource="classpath:META-INF/logger-reporter.xml" />
+	<import resource="classpath:META-INF/page_base_bean.xml" />
+
+	<ate:regularPage id="applyNowPage" />
+
+	
+	<ate:elementActionDef id="eadClickApplyNow"
+		elementFind="efApplyNowButton" elementAction="eaApplyNowClick">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efApplyNowButton"
+		findByValue="//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied']" indexOfSameElements="0" />
+	<ate:clickAction id="eaApplyNowClick" />
+	
+	<ate:elementActionDef id="eadFilloutApplicantName"
+		elementFind="efApplicantName" elementAction="eaFilloutApplicantName">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantName"
+		findByValue="applicant.name"  />
+	<ate:sendKeysAction id="eaFilloutApplicantName" dataValue="Peidong Hu"/>
+	
+	<ate:elementActionDef id="eadFilloutApplicantEmail"
+		elementFind="efApplicantEmail" elementAction="eaFilloutApplicantEmail">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantEmail"
+		findByValue="applicant.email"  />
+	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="gocarpool@hotmail.com"/>
+
+	<ate:elementActionDef id="eadFilloutApplicantPhoneNumber"
+		elementFind="efApplicantPhoneNumber" elementAction="eaFilloutApplicantPhoneNumber">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantPhoneNumber"
+		findByValue="applicant.phoneNumber"  />
+	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="5148036688"/>
+	
+	<ate:elementActionDef id="eadApplyChooseFile"
+		elementFind="efApplyNowChooseFile" elementAction="eaApplyChooseFile">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplyNowChooseFile"
+		findByValue="resume"  />
+	<ate:uploadFileAction id="eaApplyChooseFile"	
+		fileNameWithAbsolutePath="/home/peidong/Downloads/peidonghu_resume_en_Selenium.pdf" />
+
+	<ate:elementActionDef id="eadFilloutMessage"
+		elementFind="efMessage" elementAction="eaMessageSent">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efMessage"
+		findByValue="applicant.applicationMessage"  />
+	<ate:sendKeysAction id="eaMessageSent" dataValue="1) Statement: I am living in Eastern Timezone. Can not relocate, only accept remote working offer available to Canada legal worker ===> 2) Career Objective: Software test automation engineer - Selenium WebDriver ===> 3) Skill Quick Proof: This job application was automatically submitted by my automation framework Selenium ATE and scripts. The source code of ATE framework and the scripts could be found at this page, https://github.com/bigtester/automation-test-engine"/>
+
+	<ate:elementActionDef id="eadSubmitResume"
+		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efResumeSubmitButton"
+		findByValue="apply"  />
+	<ate:clickAction id="eaClickSubmitButton"/>
+	
+	<ate:elementActionDef id="eadContinueApplication"
+		elementFind="efContinueAppButton" elementAction="eaClickContinueButton">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efContinueAppButton"
+		findByValue="//a[@href='#next']"  />
+	<ate:clickAction id="eaClickContinueButton"/>
+
+	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />
+	<ate:alertDialogFindInCurrentFocus id="efAlertInFocus"/>
+	<ate:alertDialogAccept id="eaAcceptAlert"/>
+    
+	
+</beans>
