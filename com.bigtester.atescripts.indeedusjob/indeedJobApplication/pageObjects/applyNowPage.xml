@@ -74,6 +74,26 @@
 	<ate:elementFindByXpath id="efContinueAppButton"
 		findByValue="//a[@href='#next']"  />
 	<ate:clickAction id="eaClickContinueButton"/>
+	
+	<ate:elementActionDef id="eadAnswerYesForQ0"
+		elementFind="efQ0" elementAction="eaSelectYes">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efQ0"
+		findByValue="q_0"  />
+	<ate:dropdownListSelectAction id="eaSelectYes" selections="Yes"/>
+	
+	<ate:elementActionDef id="eadAnswerYesForQ1"
+		elementFind="efQ1" elementAction="eaSelectYes">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efQ1"
+		findByValue="q_1"  />
+	
+	<ate:elementActionDef id="eadAnswerYesForQ2"
+		elementFind="efQ2" elementAction="eaSelectYes">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efQ2"
+		findByValue="q_2"  />
+	
 
 	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />
 	<ate:alertDialogFindInCurrentFocus id="efAlertInFocus"/>

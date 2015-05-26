@@ -111,11 +111,40 @@
 			>
 		</ate:elementStep>
 
+		<ate:elementStep id="stepContinueQuestions"
+			stepDescription="stepContinueQuestions" stepName="stepContinueQuestions"
+			targetStep="false" elementActionDef="eadContinueApplication" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerYesQ2"
+			>
+		</ate:elementStep>
+
+		<ate:elementStep id="stepAnswerYesQ0"
+			stepDescription="stepAnswerYesQ0" stepName="stepAnswerYesQ0"
+			targetStep="false" elementActionDef="eadAnswerYesForQ0" optionalStep="true"
+			>
+		</ate:elementStep>
+
+		<ate:elementStep id="stepAnswerYesQ1"
+			stepDescription="stepAnswerYesQ1" stepName="stepAnswerYesQ1"
+			targetStep="false" elementActionDef="eadAnswerYesForQ1" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerYesQ2"
+			>
+		</ate:elementStep>
+
+		<ate:elementStep id="stepAnswerYesQ2"
+			stepDescription="stepAnswerYesQ2" stepName="stepAnswerYesQ2"
+			targetStep="false" elementActionDef="eadAnswerYesForQ2" optionalStep="true"
+			>
+		</ate:elementStep>
+
+
 		<ate:elementStep id="stepSubmitResume"
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
 			targetStep="false" elementActionDef="eadSubmitResume" optionalStep="true"
 			>
 		</ate:elementStep>
+		
+		
 			
 		
 		<ate:elementStep id="stepCloseApplyWindow"
@@ -137,9 +166,9 @@
 			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs">
 		</ate:elementStep>
 		
-		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="9" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="2" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
 		
-		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="3" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="2" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
 		
 		<ate:lastStep id="mylaststep" stepName="mylaststep"
 			stepDescription="last step close browser" targetStep="false"
