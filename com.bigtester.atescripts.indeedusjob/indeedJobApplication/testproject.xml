@@ -16,7 +16,7 @@
 	<import resource="classpath:META-INF/project_base_bean.xml" />
 
 
-	<ate:TestProject id="testproject" stepThinkTime="6"
+	<ate:TestProject id="testproject" stepThinkTime="1"
 		globalInitXmlFile="indeedJobApplication/data.xml">
 		
 		<ate:TestSuite id="easyApply" suiteName="easyApply">

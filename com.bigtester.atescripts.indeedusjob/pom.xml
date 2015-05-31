@@ -40,17 +40,6 @@
 				<executions>
 					<execution>
 						<phase>test</phase>
-<!-- 						<goals> -->
-<!-- 							<goal>exec</goal> -->
-<!-- 						</goals> -->
-<!-- 						<configuration> -->
-<!-- 							<mainClass>org.bigtester.ate.TestProjectRunner</mainClass> -->
-<!-- 							<arguments> -->
-							
-<!-- 								<argument>indeedJobApplication/testproject.xml</argument> -->
-								
-<!-- 							</arguments> -->
-<!-- 						</configuration> -->
 						<goals>
 							<goal>exec</goal>
 						</goals>
