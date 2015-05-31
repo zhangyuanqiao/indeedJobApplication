@@ -62,6 +62,12 @@
 			pageObject="indeedCaHomepage">
 		</ate:elementStep>
 		
+		<ate:elementStep id="stepSortResultByDate"
+			stepDescription="stepSortResultByDate" stepName="stepSortResultByDate"
+			targetStep="false" elementActionDef="eadClickSortByDate"
+			>
+		</ate:elementStep>
+		
 		<ate:elementStep id="stepClickJobLink"
 			stepDescription="stepClickJobLink" stepName="stepClickJobLink"
 			targetStep="false" elementActionDef="eadClickNonAdsJobLink"
