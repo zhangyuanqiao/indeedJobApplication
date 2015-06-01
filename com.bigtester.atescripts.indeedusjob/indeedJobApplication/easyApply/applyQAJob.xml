@@ -64,7 +64,7 @@
 		
 		<ate:elementStep id="stepSortResultByDate"
 			stepDescription="stepSortResultByDate" stepName="stepSortResultByDate"
-			targetStep="false" elementActionDef="eadClickSortByDate"
+			targetStep="false" elementActionDef="eadClickSortByDate" optionalStep="true"
 			>
 		</ate:elementStep>
 		
