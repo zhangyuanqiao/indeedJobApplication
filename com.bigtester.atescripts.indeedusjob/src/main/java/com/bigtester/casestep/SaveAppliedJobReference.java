@@ -58,6 +58,9 @@ public class SaveAppliedJobReference extends AbstractBaseJavaCodedStep
 			PageValidationException2, RuntimeDataException {
 		WebElement applyButtonLink = getMyWebDriver().getWebDriverInstance().findElement(By.xpath("(//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied'])[1]"));
 		String jobApplyID = applyButtonLink.getAttribute("data-indeed-apply-jobid");
+		if (null == jobApplyID) {
+			jobApplyID = applyButtonLink.getAttribute("data-indeed-apply-joburl");
+		}
 		try {
 			File yourFile = new File(JOBREFERENCESSAVEFILE);
 			if(!yourFile.exists()) {
