@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:ate="http://www.bigtester.org/schema/ate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+                           http://www.springframework.org/schema/aop 
+                           http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                           http://www.bigtester.org/schema/ate 
+                           http://www.bigtester.org/schema/ate/ate-2.0.xsd">
+
+	<!-- this registers beans annotated with @Aspect -->
+	<aop:aspectj-autoproxy />
+
+	<import resource="classpath:META-INF/logger-reporter.xml" />
+	<import resource="classpath:META-INF/page_base_bean.xml" />
+
+	<ate:regularPage id="applyNowPage" />
+
+	
+	<ate:elementActionDef id="eadClickApplyNow"
+		elementFind="efApplyNowButton" elementAction="eaApplyNowClick">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efApplyNowButton"
+		findByValue="//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied']" indexOfSameElements="0" />
+	<ate:clickAction id="eaApplyNowClick" />
+	
+	<ate:elementActionDef id="eadFilloutApplicantName"
+		elementFind="efApplicantName" elementAction="eaFilloutApplicantName">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantName"
+		findByValue="applicant.name"  />
+	<ate:sendKeysAction id="eaFilloutApplicantName" dataValue="Peidong Hu"/>
+	
+	<ate:elementActionDef id="eadFilloutApplicantFirstName"
+		elementFind="efApplicantFirstName" elementAction="eaFilloutApplicantFirstName">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantFirstName"
+		findByValue="applicant.firstName"  />
+	<ate:sendKeysAction id="eaFilloutApplicantFirstName" dataValue="Peidong"/>
+	
+	<ate:elementActionDef id="eadFilloutApplicantLastName"
+		elementFind="efApplicantLastName" elementAction="eaFilloutApplicantLastName">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantLastName"
+		findByValue="applicant.lastName"  />
+	<ate:sendKeysAction id="eaFilloutApplicantLastName" dataValue="Hu"/>
+	
+	<ate:elementActionDef id="eadFilloutApplicantEmail"
+		elementFind="efApplicantEmail" elementAction="eaFilloutApplicantEmail">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantEmail"
+		findByValue="applicant.email"  />
+	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="hupeidong@yahoo.com"/>
+
+	<ate:elementActionDef id="eadFilloutApplicantPhoneNumber"
+		elementFind="efApplicantPhoneNumber" elementAction="eaFilloutApplicantPhoneNumber">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplicantPhoneNumber"
+		findByValue="applicant.phoneNumber"  />
+	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="5148036688"/>
+	
+	<ate:elementActionDef id="eadApplyChooseFile"
+		elementFind="efApplyNowChooseFile" elementAction="eaApplyChooseFile">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efApplyNowChooseFile"
+		findByValue="resume"  />
+	<ate:uploadFileAction id="eaApplyChooseFile"	
+		fileNameWithAbsolutePath="/home/peidong/peidonghu_resume_en_Selenium3.pdf" />
+
+	<ate:elementActionDef id="eadFilloutMessage"
+		elementFind="efMessage" elementAction="eaMessageSent">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efMessage"
+		findByValue="applicant.applicationMessage"  />
+	<ate:assignValueAction id="eaMessageSent" dataValue=" 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can not relocate, only accept remote working offer available to Canadian legal worker. =====> 2) Career Objective: A challenging and rewarding position as a software test automation engineer using Selenium WebDriver =====> 3) Automation Skill Quick Proof: This job application was automatically submitted by my Selenium ATE automation test framework and scripts running against Indeed.com. The source code of ATE framework and the scripts could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
+
+	<ate:elementActionDef id="eadSubmitResume"
+		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efResumeSubmitButton"
+		findByValue="apply"  />
+	<ate:clickAction id="eaClickSubmitButton"/>
+	
+	<ate:elementActionDef id="eadContinueApplication"
+		elementFind="efContinueAppButton" elementAction="eaClickContinueButton">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efContinueAppButton"
+		findByValue="//a[@href='#next']"  />
+	<ate:clickAction id="eaClickContinueButton"/>
+	
+	<ate:elementActionDef id="eadAnswerYesForQ0"
+		elementFind="efQ0" elementAction="eaSelectYes">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efQ0"
+		findByValue="q_0"  />
+	<ate:dropdownListSelectAction id="eaSelectYes" selections="Yes"/>
+	
+	<ate:elementActionDef id="eadAnswerYesForQ1"
+		elementFind="efQ1" elementAction="eaSelectYes">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efQ1"
+		findByValue="q_1"  />
+	
+	<ate:elementActionDef id="eadAnswerYesForQ2"
+		elementFind="efQ2" elementAction="eaSelectYes">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efQ2"
+		findByValue="q_2"  />
+	
+
+	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />
+	<ate:alertDialogFindInCurrentFocus id="efAlertInFocus"/>
+	<ate:alertDialogAccept id="eaAcceptAlert"/>
+    
+	
+</beans>

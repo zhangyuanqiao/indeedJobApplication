@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:ate="http://www.bigtester.org/schema/ate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+                           http://www.springframework.org/schema/aop 
+                           http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                           http://www.bigtester.org/schema/ate 
+                           http://www.bigtester.org/schema/ate/ate-2.0.xsd">
+
+	<!-- this registers beans annotated with @Aspect -->
+	<aop:aspectj-autoproxy />
+
+	<import resource="classpath:META-INF/logger-reporter.xml" />
+	<import resource="classpath:META-INF/page_base_bean.xml" />
+
+	<ate:regularPage id="jobSearchResult"
+		dataFile="indeedJobApplication/pageObjects/jobSearchResult.data.xml" />
+	
+	<ate:elementActionDef id="eadClickSortByDate"
+		elementFind="efDateSortingLink" elementAction="eaDateClick">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efDateSortingLink"
+		findByValue="//a[contains(@href,'sort=date')]"/>
+	<ate:clickAction id="eaDateClick" />
+	
+	<ate:elementActionDef id="eadClickNonAdsJobLink"
+		elementFind="efNonAdsJobLink" elementAction="eaNonAdsJobLinkClick">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efNonAdsJobLink"
+		findByValue="//div[contains(.,'Easily')]//h2/a[contains(@onclick, 'return rclk')]" indexOfSameElements="aidhNonAdsJobLinkIndex" />
+	<ate:clickAction id="eaNonAdsJobLinkClick" />
+	<ate:autoIncrementalDataHolder id="aidhNonAdsJobLinkIndex"
+		startValue="0" pacing="1" />
+
+
+	<ate:elementActionDef id="eadSwitchToApplyWindow"
+		elementFind="efApplyJobWindow" elementAction="eaSwitchToWindow2">
+	</ate:elementActionDef>
+	<ate:browserWindowFindByOpenSequence
+		id="efApplyJobWindow" openSequence="1" />
+	<ate:browserWindowSwitch id="eaSwitchToWindow2" />
+	
+
+	<ate:elementActionDef id="eadCloseApplyWindow"
+		elementFind="efApplyJobWindow" elementAction="eaCloseWindow2">
+	</ate:elementActionDef>
+	<ate:browserWindowClose id="eaCloseWindow2" />
+	
+	<ate:elementActionDef id="eadClickPagingNumber"
+		elementFind="efPageNumber" elementAction="eaPageNumberClick">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efPageNumber"
+		findByValue="//a[span[not(*) and @class='pn' and not(translate(text(), '0123456789', ''))]]" indexOfSameElements="aidhPageNumber" />
+	<ate:autoIncrementalDataHolder id="aidhPageNumber"
+		startValue="0" pacing="1" />
+	<ate:clickAction id="eaPageNumberClick" />
+	
+</beans>
