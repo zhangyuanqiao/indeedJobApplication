@@ -58,7 +58,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantPhoneNumber"
 		findByValue="applicant.phoneNumber"  />
-	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="5144479996"/>
+	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="4384978866"/>
 	
 	<ate:elementActionDef id="eadApplyChooseFile"
 		elementFind="efApplyNowChooseFile" elementAction="eaApplyChooseFile">
@@ -66,7 +66,7 @@
 	<ate:elementFindById id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="/home/peidong/fengfeiCR.pdf" />
+		fileNameWithAbsolutePath="/home/peidong/fengfeiCR_US3.pdf" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
