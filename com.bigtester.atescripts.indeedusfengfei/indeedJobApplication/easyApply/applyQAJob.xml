@@ -27,7 +27,7 @@
 	<ate:operaDriver    />
 	<ate:htmlUnitDriver />
       -->
-	<ate:chromeDriver />
+	<ate:sauceLabDriver  userName="zhouyibhic" accessKey="5b66a725-2fd8-4d53-9328-d8c988ac58c6"/>
 
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
@@ -68,6 +68,20 @@
 <!-- 			> -->
 <!-- 		</ate:elementStep> -->
 		
+		<ate:elementStep id="stepClosePopoverDialog"
+			stepDescription="stepClosePopoverDialog" stepName="stepClosePopoverDialog"
+			targetStep="false" elementActionDef="eadTypeClosePopoverDialog"
+			optionalStep="true"
+			pageObject="indeedCaHomepage">
+		</ate:elementStep>
+		
+		<ate:elementStep id="stepCloseEmailPopoverDialog"
+			stepDescription="stepCloseEmailPopoverDialog" stepName="stepCloseEmailPopoverDialog"
+			targetStep="false" elementActionDef="eadTypeCloseEmailPopoverDialog"
+			optionalStep="true"
+			pageObject="indeedCaHomepage">
+		</ate:elementStep>
+<!-- 			correlatedOptionalStepsUtilInclusive="stepClickJobLink" -->
 		<ate:elementStep id="stepClickJobLink"
 			stepDescription="stepClickJobLink" stepName="stepClickJobLink"
 			targetStep="false" elementActionDef="eadClickNonAdsJobLink"
@@ -192,7 +206,7 @@
 			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs">
 		</ate:elementStep>
 		
-		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="9" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClosePopoverDialog" numberOfIterations="9" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
 		
 		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="2" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
 		

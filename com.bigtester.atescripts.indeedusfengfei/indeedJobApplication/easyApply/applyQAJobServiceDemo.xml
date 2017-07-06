@@ -29,8 +29,8 @@
 	<ate:operaDriver    />
 	<ate:htmlUnitDriver />
       -->
-	<ate:firefoxDriver profileName="dentisteasy" />
-
+<!-- 	<ate:firefoxDriver profileName="dentisteasy" /> -->
+<ate:sauceLabDriver  userName="zhouyibhic" accessKey="5b66a725-2fd8-4d53-9328-d8c988ac58c6"/>
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
 		<ate:homeStep id="stepOpenHomePage" stepName="openHomePage"
