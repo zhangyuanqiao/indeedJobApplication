@@ -41,11 +41,11 @@
 	<ate:clickAction id="eaClickEmailPopOverButton" />
 	
 	<ate:elementActionDef id="eadClickAgreeLegalButton"
-		elementFind="efEmailPopoverCloseButton" elementAction="eaClickEmailPopOverButton">
+		elementFind="efAgreeLegalButton" elementAction="eaClickAgreeLegalButton">
 	</ate:elementActionDef>
-	<ate:e id="efEmailPopoverCloseButton"
-		findByValue="popover-close-button"/>
-	<ate:clickAction id="eaClickEmailPopOverButton" />
+	<ate:elementFindByClassName id="efAgreeLegalButton"
+		findByValue="icl-Button icl-Button--primary icl-Button--md icl-Button--responsive"/>
+	<ate:clickAction id="eaClickAgreeLegalButton" />
 	
 	
 	<ate:elementActionDef id="eadClearTextInWhere"

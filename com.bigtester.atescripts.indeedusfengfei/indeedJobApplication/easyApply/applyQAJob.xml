@@ -81,6 +81,13 @@
 			optionalStep="true"
 			pageObject="indeedCaHomepage">
 		</ate:elementStep>
+		<ate:elementStep id="stepCloseAgreeLegalButton"
+			stepDescription="stepCloseAgreeLegalButton" stepName="stepCloseAgreeLegalButton"
+			targetStep="false" elementActionDef="eadClickAgreeLegalButton"
+			optionalStep="true"
+			pageObject="indeedCaHomepage">
+		</ate:elementStep>
+		
 <!-- 			correlatedOptionalStepsUtilInclusive="stepClickJobLink" -->
 		<ate:elementStep id="stepClickJobLink"
 			stepDescription="stepClickJobLink" stepName="stepClickJobLink"
