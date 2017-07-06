@@ -37,6 +37,8 @@ import org.bigtester.ate.model.page.exception.StepExecutionException;
 import org.eclipse.jdt.annotation.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -55,6 +57,8 @@ public class SaveAppliedJobReference extends AbstractBaseJavaCodedStep
 	 */
 	public void doStep(@Nullable IStepJumpingEnclosedContainer jumpingContainer) throws StepExecutionException,
 			PageValidationException, RuntimeDataException {
+		WebDriverWait wait = new WebDriverWait(getMyWebDriver().getWebDriverInstance(), 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied'])[1]")));
 		WebElement applyButtonLink = getMyWebDriver().getWebDriverInstance().findElement(By.xpath("(//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied'])[1]"));
 		String jobApplyID = applyButtonLink.getAttribute("data-indeed-apply-jobid");
 		try {
