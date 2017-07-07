@@ -88,6 +88,7 @@
 	</appender>
 
 	<logger name="org.bigtester" level="ALL" />
+	<logger name="org.springframework" level="ALL"/>
 	<root level="ALL">
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="SystemLog" />

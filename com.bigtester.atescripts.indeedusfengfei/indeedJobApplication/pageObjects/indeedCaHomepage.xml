@@ -40,12 +40,12 @@
 		findByValue="popover-close-button"/>
 	<ate:clickAction id="eaClickEmailPopOverButton" />
 	
-	<ate:elementActionDef id="eadClickAgreeLegalButton"
-		elementFind="efAgreeLegalButton" elementAction="eaClickAgreeLegalButton">
-	</ate:elementActionDef>
-	<ate:elementFindByClassName id="efAgreeLegalButton"
-		findByValue="icl-Button icl-Button--primary icl-Button--md icl-Button--responsive"/>
-	<ate:clickAction id="eaClickAgreeLegalButton" />
+<!-- 	<ate:elementActionDef id="eadClickAgreeLegalButton" -->
+<!-- 		elementFind="efAgreeLegalButton" elementAction="eaClickAgreeLegalButton"> -->
+<!-- 	</ate:elementActionDef> -->
+<!-- 	<ate:elementFindByClassName id="efAgreeLegalButton" -->
+<!-- 		findByValue="icl-Button icl-Button--primary icl-Button--md icl-Button--responsive"/> -->
+<!-- 	<ate:clickAction id="eaClickAgreeLegalButton" /> -->
 	
 	
 	<ate:elementActionDef id="eadClearTextInWhere"
