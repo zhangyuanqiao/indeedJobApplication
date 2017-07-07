@@ -36,16 +36,16 @@
 	<ate:elementActionDef id="eadTypeCloseEmailPopoverDialog"
 		elementFind="efEmailPopoverCloseButton" elementAction="eaClickEmailPopOverButton">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efEmailPopoverCloseButton"
-		findByValue="popover-close-button"/>
+	<ate:elementFindByXpath id="efEmailPopoverCloseButton"
+		findByValue="//a[contains(text(),'No, thanks')]"/>
 	<ate:clickAction id="eaClickEmailPopOverButton" />
 	
-<!-- 	<ate:elementActionDef id="eadClickAgreeLegalButton" -->
-<!-- 		elementFind="efAgreeLegalButton" elementAction="eaClickAgreeLegalButton"> -->
-<!-- 	</ate:elementActionDef> -->
-<!-- 	<ate:elementFindByClassName id="efAgreeLegalButton" -->
-<!-- 		findByValue="icl-Button icl-Button--primary icl-Button--md icl-Button--responsive"/> -->
-<!-- 	<ate:clickAction id="eaClickAgreeLegalButton" /> -->
+	<ate:elementActionDef id="eadClickAgreeLegalButton"
+		elementFind="efAgreeLegalButton" elementAction="eaClickAgreeLegalButton">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efAgreeLegalButton"
+		findByValue="//button[contains(text(),'I agree')]"/>
+	<ate:clickAction id="eaClickAgreeLegalButton" />
 	
 	
 	<ate:elementActionDef id="eadClearTextInWhere"
