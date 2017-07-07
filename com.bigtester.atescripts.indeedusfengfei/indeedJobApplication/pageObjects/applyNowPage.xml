@@ -96,6 +96,27 @@
 		findByValue="q_0"  />
 	<ate:dropdownListSelectAction id="eaSelectYes" selections="Yes"/>
 	
+	<ate:elementActionDef id="eadAnswerYesForQ0Raido"
+		elementFind="efQ0Raido" elementAction="eaClickYes">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efQ0Raido"
+		findByValue="//input[@type='radio' and @value='0']"  indexOfSameElements="0"/>
+	<ate:clickAction id="eaClickYes" />
+	
+	<ate:elementActionDef id="eadAnswerYesForQ1Raido"
+		elementFind="efQ1Raido" elementAction="eaClickYes1">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efQ1Raido"
+		findByValue="//input[@type='radio' and @value='0']"  indexOfSameElements="1"/>
+	<ate:clickAction id="eaClickYes1" />
+	
+	<ate:elementActionDef id="eadAnswerYesForQ2Raido"
+		elementFind="efQ2Raido" elementAction="eaClickYes2">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efQ2Raido"
+		findByValue="//input[@type='radio' and @value='0']"  indexOfSameElements="2"/>
+	<ate:clickAction id="eaClickYes2" />
+	
 	<ate:elementActionDef id="eadAnswerYesForQ1"
 		elementFind="efQ1" elementAction="eaSelectYes">
 	</ate:elementActionDef>
@@ -108,6 +129,26 @@
 	<ate:elementFindById id="efQ2"
 		findByValue="q_2"  />
 	
+	<ate:elementActionDef id="eadAnswerIntForInput0"
+		elementFind="efQ0TypeInt" elementAction="eaQ0TypeInt">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efQ0TypeInt"
+		findByValue="//input[@type='text' and @data-format='INTEGER']"  indexOfSameElements="0"/>
+	<ate:sendKeysAction id="eaQ0TypeInt"  dataValue="5"/>
+	
+	<ate:elementActionDef id="eadAnswerIntForInput1"
+		elementFind="efQ1TypeInt" elementAction="eaQ1TypeInt">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efQ1TypeInt"
+		findByValue="//input[@type='text' and @data-format='INTEGER']"  indexOfSameElements="1"/>
+	<ate:sendKeysAction id="eaQ1TypeInt"  dataValue="5"/>
+	
+	<ate:elementActionDef id="eadAnswerIntForInput2"
+		elementFind="efQ2TypeInt" elementAction="eaQ2TypeInt">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efQ2TypeInt"
+		findByValue="//input[@type='text' and @data-format='INTEGER']"  indexOfSameElements="2"/>
+	<ate:sendKeysAction id="eaQ2TypeInt"  dataValue="5"/>
 
 	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />
 	<ate:alertDialogFindInCurrentFocus id="efAlertInFocus"/>

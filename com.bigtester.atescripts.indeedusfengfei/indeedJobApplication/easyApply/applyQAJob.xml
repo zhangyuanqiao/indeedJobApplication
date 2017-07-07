@@ -183,6 +183,21 @@
 			targetStep="false" elementActionDef="eadAnswerYesForQ2" optionalStep="true"
 			>
 		</ate:elementStep>
+		<ate:elementStep id="stepAnswerYesQ0Radio"
+			stepDescription="stepAnswerYesQ0Radio" stepName="stepAnswerYesQ0Radio"
+			targetStep="false" elementActionDef="eadAnswerYesForQ0Raido" optionalStep="true"
+			>
+		</ate:elementStep>
+		<ate:elementStep id="stepAnswerYesQ1Radio"
+			stepDescription="stepAnswerYesQ1Radio" stepName="stepAnswerYesQ1Radio"
+			targetStep="false" elementActionDef="eadAnswerYesForQ1Raido" optionalStep="true"
+			>
+		</ate:elementStep>
+		<ate:elementStep id="stepAnswerYesQ2Radio"
+			stepDescription="stepAnswerYesQ2Radio" stepName="stepAnswerYesQ2Radio"
+			targetStep="false" elementActionDef="eadAnswerYesForQ2Raido" optionalStep="true"
+			>
+		</ate:elementStep>
 
 
 		<ate:elementStep id="stepSubmitResume"
