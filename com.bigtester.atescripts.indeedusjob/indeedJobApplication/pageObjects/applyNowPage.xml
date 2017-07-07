@@ -134,21 +134,21 @@
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efQ0TypeInt"
 		findByValue="//input[@type='text' and @data-format='INTEGER']"  indexOfSameElements="0"/>
-	<ate:sendKeysAction id="eaQ0TypeInt"  dataValue="5"/>
+	<ate:sendKeysAction id="eaQ0TypeInt"  dataValue="10"/>
 	
 	<ate:elementActionDef id="eadAnswerIntForInput1"
 		elementFind="efQ1TypeInt" elementAction="eaQ1TypeInt">
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efQ1TypeInt"
 		findByValue="//input[@type='text' and @data-format='INTEGER']"  indexOfSameElements="1"/>
-	<ate:sendKeysAction id="eaQ1TypeInt"  dataValue="5"/>
+	<ate:sendKeysAction id="eaQ1TypeInt"  dataValue="10"/>
 	
 	<ate:elementActionDef id="eadAnswerIntForInput2"
 		elementFind="efQ2TypeInt" elementAction="eaQ2TypeInt">
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efQ2TypeInt"
 		findByValue="//input[@type='text' and @data-format='INTEGER']"  indexOfSameElements="2"/>
-	<ate:sendKeysAction id="eaQ2TypeInt"  dataValue="5"/>
+	<ate:sendKeysAction id="eaQ2TypeInt"  dataValue="10"/>
 
 
 	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />
