@@ -3,7 +3,7 @@
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
-				%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n - %throwable{full}
+				%d{HH:mm:ss.SSS} [%thread] %-5level - %msg%n - %throwable{full}
 			</Pattern>
 		</encoder>
 <!-- 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter"> -->
