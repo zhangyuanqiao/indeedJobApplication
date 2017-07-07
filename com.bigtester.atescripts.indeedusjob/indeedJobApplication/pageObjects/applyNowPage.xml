@@ -51,14 +51,14 @@
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantEmail"
 		findByValue="applicant.email"  />
-	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="hupeidong@yahoo.com"/>
+	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="bigtester.prot@gmail.com"/>
 
 	<ate:elementActionDef id="eadFilloutApplicantPhoneNumber"
 		elementFind="efApplicantPhoneNumber" elementAction="eaFilloutApplicantPhoneNumber">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantPhoneNumber"
 		findByValue="applicant.phoneNumber"  />
-	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="5148036688"/>
+	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="6475511505"/>
 	
 	<ate:elementActionDef id="eadApplyChooseFile"
 		elementFind="efApplyNowChooseFile" elementAction="eaApplyChooseFile">
