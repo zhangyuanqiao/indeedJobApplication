@@ -45,6 +45,29 @@
 <!-- 	<ate:runTimeDataHolder id="Montreal1, QC" -->
 <!-- 		dataHolderType="ManualAssigned" dataType="Text" dataValue="Montreal, QC" /> -->
 
+	<ate:elementActionDef id="eadTypeClosePopoverDialog"
+		elementFind="efPopoverCloseButton" elementAction="eaClickPopOverButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efPopoverCloseButton"
+		findByValue="prime-popover-close-button"/>
+	<ate:clickAction id="eaClickPopOverButton" />
+	
+	<ate:elementActionDef id="eadTypeCloseEmailPopoverDialog"
+		elementFind="efEmailPopoverCloseButton" elementAction="eaClickEmailPopOverButton">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efEmailPopoverCloseButton"
+		findByValue="//a[contains(text(),'No, thanks')]"/>
+	<ate:clickAction id="eaClickEmailPopOverButton" />
+	
+	<ate:elementActionDef id="eadClickAgreeLegalButton"
+		elementFind="efAgreeLegalButton" elementAction="eaClickAgreeLegalButton">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efAgreeLegalButton"
+		findByValue="//button[contains(text(),'I agree')]"/>
+	<ate:clickAction id="eaClickAgreeLegalButton" />
+
+
+
 	<ate:elementActionDef id="eadClickFindJobsButton"
 		elementFind="efFindJobsButton" elementAction="eaFindJobsButtonClick">
 	</ate:elementActionDef>
