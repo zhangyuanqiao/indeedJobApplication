@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>org.bigtester</groupId>
 			<artifactId>org.bigtester.ate.core</artifactId>
-			<version>0.1.2-SNAPSHOT</version>
+			<version>0.1.3-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
