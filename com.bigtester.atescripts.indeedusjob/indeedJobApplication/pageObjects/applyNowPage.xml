@@ -28,50 +28,50 @@
 	<ate:elementActionDef id="eadFilloutApplicantName"
 		elementFind="efApplicantName" elementAction="eaFilloutApplicantName">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efApplicantName"
+	<ate:elementFindByName id="efApplicantName"
 		findByValue="applicant.name"  />
 	<ate:sendKeysAction id="eaFilloutApplicantName" dataValue="Peidong Hu"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantFirstName"
 		elementFind="efApplicantFirstName" elementAction="eaFilloutApplicantFirstName">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efApplicantFirstName"
+	<ate:elementFindByName id="efApplicantFirstName"
 		findByValue="applicant.firstName"  />
 	<ate:sendKeysAction id="eaFilloutApplicantFirstName" dataValue="Peidong"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantLastName"
 		elementFind="efApplicantLastName" elementAction="eaFilloutApplicantLastName">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efApplicantLastName"
+	<ate:elementFindByName id="efApplicantLastName"
 		findByValue="applicant.lastName"  />
 	<ate:sendKeysAction id="eaFilloutApplicantLastName" dataValue="Hu"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantEmail"
 		elementFind="efApplicantEmail" elementAction="eaFilloutApplicantEmail">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efApplicantEmail"
+	<ate:elementFindByName id="efApplicantEmail"
 		findByValue="applicant.email"  />
 	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="bigtester.prot@gmail.com"/>
 
 	<ate:elementActionDef id="eadFilloutApplicantPhoneNumber"
 		elementFind="efApplicantPhoneNumber" elementAction="eaFilloutApplicantPhoneNumber">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efApplicantPhoneNumber"
+	<ate:elementFindByName id="efApplicantPhoneNumber"
 		findByValue="applicant.phoneNumber"  />
 	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="6475511505"/>
 	
 	<ate:elementActionDef id="eadApplyChooseFile"
 		elementFind="efApplyNowChooseFile" elementAction="eaApplyChooseFile">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efApplyNowChooseFile"
+	<ate:elementFindByName id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="/home/peidong/peidonghu_2017_toronto.pdf" />
+		fileNameWithAbsolutePath="/home/peidong/peidonghu_2017_oct.pdf" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
 	</ate:elementActionDef>
-	<ate:elementFindById id="efMessage"
+	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
 	<ate:assignValueAction id="eaMessageSent" dataValue=" I don't selling myself. I sell only the result of my commitment.    "/>
 
