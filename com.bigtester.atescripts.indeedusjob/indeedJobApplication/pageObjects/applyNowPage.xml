@@ -89,6 +89,14 @@
 		findByValue="//a[@href='#next']"  />
 	<ate:clickAction id="eaClickContinueButton"/>
 	
+	<ate:elementActionDef id="eadContinueApplication2"
+		elementFind="efContinueAppButton2" elementAction="eaClickContinueButton">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efContinueAppButton2"
+		findByValue="//button[@id='form-action-continue']"  />
+	
+	
+	
 	<ate:elementActionDef id="eadAnswerYesForQ0"
 		elementFind="efQ0" elementAction="eaSelectYes">
 	</ate:elementActionDef>
