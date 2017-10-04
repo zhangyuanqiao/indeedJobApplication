@@ -186,6 +186,7 @@
 		<ate:elementStep id="stepAnswerYesQ0"
 			stepDescription="stepAnswerYesQ0" stepName="stepAnswerYesQ0"
 			targetStep="false" elementActionDef="eadAnswerYesForQ0" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerYesQ2"
 			>
 		</ate:elementStep>
 
@@ -211,6 +212,7 @@
 		<ate:elementStep id="stepAnswerYesQ1Radio"
 			stepDescription="stepAnswerYesQ1Radio" stepName="stepAnswerYesQ1Radio"
 			targetStep="false" elementActionDef="eadAnswerYesForQ1Raido" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerYesQ2Radio"
 			>
 		</ate:elementStep>
 		<ate:elementStep id="stepAnswerYesQ2Radio"
@@ -222,6 +224,7 @@
 		<ate:elementStep id="stepAnswerIntQ0Input"
 			stepDescription="stepAnswerIntQ0Input" stepName="stepAnswerIntQ0Input"
 			targetStep="false" elementActionDef="eadAnswerIntForInput0" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input"
 			>
 		</ate:elementStep>
 		
@@ -244,6 +247,7 @@
 		<ate:elementStep id="stepSubmitResume"
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
 			targetStep="false" elementActionDef="eadSubmitResume" optionalStep="true"
+			successConditionallyJumpToStep="stepCloseApplyWindow"
 			>
 		</ate:elementStep>
 		
