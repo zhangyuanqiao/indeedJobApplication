@@ -113,13 +113,21 @@
 			stepDescription="stepClickApplyNow" stepName="stepClickApplyNow"
 			targetStep="false" elementActionDef="eadClickApplyNow"
 			optionalStep="true"
-			correlatedOptionalStepsUtilInclusive="stepSubmitResume">
+			successConditionallyJumpToStep="stepFilloutApplicantName">
+		</ate:elementStep>
+		
+		<ate:elementStep id="stepClickApplyNow2"
+			stepDescription="stepClickApplyNow2" stepName="stepClickApplyNow2"
+			targetStep="false" elementActionDef="eadClickApplyNow2"
+			optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepSubmitResume2">
 		</ate:elementStep>
 
 		<ate:elementStep id="stepFilloutApplicantName"
 			stepDescription="stepFilloutApplicantName" stepName="stepFilloutApplicantName"
 			optionalStep="true"
 			targetStep="false" elementActionDef="eadFilloutApplicantName"
+			successConditionallyJumpToStep="stepFilloutApplicantEmail"
 			>
 		</ate:elementStep>
 
@@ -164,8 +172,8 @@
 		<ate:elementStep id="stepContinueQuestions"
 			stepDescription="stepContinueQuestions" stepName="stepContinueQuestions"
 			targetStep="false" elementActionDef="eadContinueApplication" optionalStep="true"
-
-			>
+			successConditionallyJumpToStep="stepAnswerYesQ0">
+			
 		</ate:elementStep>
 		
 				<ate:elementStep id="stepContinueQuestions2"
@@ -197,12 +205,12 @@
 		<ate:elementStep id="stepAnswerYesQ0Radio"
 			stepDescription="stepAnswerYesQ0Radio" stepName="stepAnswerYesQ0Radio"
 			targetStep="false" elementActionDef="eadAnswerYesForQ0Raido" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerYesQ2Radio"
 			>
 		</ate:elementStep>
 		<ate:elementStep id="stepAnswerYesQ1Radio"
 			stepDescription="stepAnswerYesQ1Radio" stepName="stepAnswerYesQ1Radio"
 			targetStep="false" elementActionDef="eadAnswerYesForQ1Raido" optionalStep="true"
-			correlatedOptionalStepsUtilInclusive="stepAnswerYesQ2Radio"
 			>
 		</ate:elementStep>
 		<ate:elementStep id="stepAnswerYesQ2Radio"
@@ -211,7 +219,7 @@
 			>
 		</ate:elementStep>
 
-<ate:elementStep id="stepAnswerIntQ0Input"
+		<ate:elementStep id="stepAnswerIntQ0Input"
 			stepDescription="stepAnswerIntQ0Input" stepName="stepAnswerIntQ0Input"
 			targetStep="false" elementActionDef="eadAnswerIntForInput0" optionalStep="true"
 			>
@@ -236,6 +244,12 @@
 		<ate:elementStep id="stepSubmitResume"
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
 			targetStep="false" elementActionDef="eadSubmitResume" optionalStep="true"
+			>
+		</ate:elementStep>
+		
+		<ate:elementStep id="stepSubmitResume2"
+			stepDescription="stepSubmitResume2" stepName="stepSubmitResume2"
+			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
 			>
 		</ate:elementStep>
 		

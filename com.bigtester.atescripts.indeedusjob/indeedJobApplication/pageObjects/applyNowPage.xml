@@ -25,6 +25,14 @@
 		findByValue="//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied']" indexOfSameElements="0" />
 	<ate:clickAction id="eaApplyNowClick" />
 	
+	
+	<ate:elementActionDef id="eadClickApplyNow2"
+		elementFind="efApplyNowButton2" elementAction="eaApplyNowClick">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efApplyNowButton2"
+		findByValue="//a[@class='indeed-apply-button']"/>
+	
+	
 	<ate:elementActionDef id="eadFilloutApplicantName"
 		elementFind="efApplicantName" elementAction="eaFilloutApplicantName">
 	</ate:elementActionDef>
@@ -81,6 +89,13 @@
 	<ate:elementFindById id="efResumeSubmitButton"
 		findByValue="apply"  />
 	<ate:clickAction id="eaClickSubmitButton"/>
+	
+	<ate:elementActionDef id="eadSubmitResume2"
+		elementFind="efResumeSubmitButton2" elementAction="eaClickSubmitButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efResumeSubmitButton2"
+		findByValue="form-action-submit"  />
+	
 	
 	<ate:elementActionDef id="eadContinueApplication"
 		elementFind="efContinueAppButton" elementAction="eaClickContinueButton">
