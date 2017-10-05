@@ -55,8 +55,8 @@
           <executable>java</executable>
           <arguments>
           <argument>-Dlogback.configurationFile=indeedJobApplication/logback-production.xml</argument>
-          <argument>-Xdebug</argument>
-          <argument>-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8007</argument>
+<!--           <argument>-Xdebug</argument> -->
+<!--           <argument>-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8007</argument> -->
           
             <argument>-classpath</argument>
             <!-- automatically creates the classpath using all project dependencies,
