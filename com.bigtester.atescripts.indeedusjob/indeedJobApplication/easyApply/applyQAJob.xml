@@ -240,8 +240,26 @@
 			targetStep="false" elementActionDef="eadAnswerIntForInput2" optionalStep="true"
 			>
 		</ate:elementStep>
-
-
+		
+		<ate:elementStep id="stepAnswerIntQ0Input-"
+			stepDescription="stepAnswerIntQ0Input-" stepName="stepAnswerIntQ0Input-"
+			targetStep="false" elementActionDef="eadAnswerIntForInput0-" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input-"
+			>
+		</ate:elementStep>
+		
+		<ate:elementStep id="stepAnswerIntQ1Input-"
+			stepDescription="stepAnswerIntQ1Input-" stepName="stepAnswerIntQ1Input-"
+			targetStep="false" elementActionDef="eadAnswerIntForInput1-" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input-"
+			>
+		</ate:elementStep>
+		
+		<ate:elementStep id="stepAnswerIntQ2Input-"
+			stepDescription="stepAnswerIntQ2Input-" stepName="stepAnswerIntQ2Input-"
+			targetStep="false" elementActionDef="eadAnswerIntForInput2-" optionalStep="true"
+			>
+		</ate:elementStep>
 
 
 		<ate:elementStep id="stepSubmitResume"
