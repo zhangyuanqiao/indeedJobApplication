@@ -179,7 +179,7 @@
 				<ate:elementStep id="stepContinueQuestions2"
 			stepDescription="stepContinueQuestions2" stepName="stepContinueQuestions2"
 			targetStep="false" elementActionDef="eadContinueApplication2" optionalStep="true"
-
+			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input-"
 			>
 		</ate:elementStep>
 
