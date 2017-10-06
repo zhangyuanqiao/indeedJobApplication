@@ -28,9 +28,9 @@
 	<ate:htmlUnitDriver />
       -->
 <!--       <ate:firefoxDriver  /> -->
-		<ate:chromeDriver  preserveCookies="true" startArguments="--allow-file-access-from-files --disable-web-security"/>
+<!-- 		<ate:chromeDriver  preserveCookies="true" startArguments="allow-file-access-from-files disable-web-security"/> -->
 <!-- <ate:sauceLabDriver  userName="zhouyibhic" accessKey="5b66a725-2fd8-4d53-9328-d8c988ac58c6"/> -->
-
+	<ate:remoteChromeDriver url="http://192.168.0.105:4444/wd/hub"/>
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
 		<ate:homeStep id="stepOpenHomePage" stepName="stepOpenHomePage"
