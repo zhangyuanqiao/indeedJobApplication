@@ -273,9 +273,12 @@
 		<ate:elementStep id="stepSubmitResume2"
 			stepDescription="stepSubmitResume2" stepName="stepSubmitResume2"
 			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
+			successConditionallyJumpToStep="stepCloseApplyWindow"
 			>
 		</ate:elementStep>
 		
+		
+		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="1" endStepName="stepSubmitResume2" stepName="stepRepeatQuestionFilling" targetStep="false"/>
 		
 			
 		
