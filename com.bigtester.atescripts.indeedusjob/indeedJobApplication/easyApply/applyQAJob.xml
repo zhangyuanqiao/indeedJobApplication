@@ -108,7 +108,7 @@
 
 		<ate:javaCodedStep id="javaStep1" stepName="javaStep1" elementActionDef="com.bigtester.casestep.SaveAppliedJobReference" targetStep="false"
 		optionalStep="true"
-			correlatedOptionalStepsUtilInclusive="stepSubmitResume2"/>
+			correlatedOptionalStepsUtilInclusive="stepRepeatQuestionFilling"/>
 
 		<ate:elementStep id="stepClickApplyNow"
 			stepDescription="stepClickApplyNow" stepName="stepClickApplyNow"
