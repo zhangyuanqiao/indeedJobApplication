@@ -74,7 +74,7 @@
 	<ate:elementFindByName id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="~/peidonghu_2017_oct_USA.pdf" />
+		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_2017_oct_USA.pdf" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
