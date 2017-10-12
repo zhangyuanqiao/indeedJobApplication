@@ -74,14 +74,15 @@
 	<ate:elementFindByName id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_2017_oct_USA.pdf" />
+		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_2017_oct_USA_dev.pdf" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can not relocate by end of 2018, only accept remote working offer available to Canadian legal worker. =====> 2) Career Objective: A software QA automation engineer using Selenium and Appnium =====> 3) Automation Skill Quick Proof: This job application was automatically submitted by my Selenium ATE automation test framework and scripts running against Indeed.com. The source code of ATE framework and the scripts could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
+	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for AI Machine Learning Related Software Development Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by end of 2018, only accept remote working offer available to Canadian legal worker.
+======>2) Note: This job application was automatically submitted by my machine learning trained robot running against Indeed.com.    "/>
 
 	<ate:elementActionDef id="eadSubmitResume"
 		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
