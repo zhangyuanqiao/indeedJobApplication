@@ -91,6 +91,6 @@
 	<root level="ALL">
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="SystemLog" />
-		<appender-ref ref="ApplicationLog" />
+		<!-- <appender-ref ref="ApplicationLog" />-->
 	</root>
 </configuration>
