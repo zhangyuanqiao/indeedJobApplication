@@ -7,35 +7,26 @@
 		TestDataContext_IdColumn="5" />
 
 	<ElementInputData FirstTimeExecution="Yes"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Machine Learning"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps"
 		testDataContext_idColumn="1" />
 		
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Java"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="CICD"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="1" />
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Neo4j"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps Lead"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="2" />
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Java Spring"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps Automation"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="3" />
 
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Developement Lead"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps Remote"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="4" />
 
-	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Application Developer"
-		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
-		iteration="5" />
-
-	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Scala"
-		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
-		iteration="6" />
 
 </dataset>

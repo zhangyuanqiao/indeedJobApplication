@@ -74,15 +74,15 @@
 	<ate:elementFindByName id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_2017_oct_USA_dev.pdf" />
+		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_2017_oct_USA_devOps.pdf" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for AI Machine Learning Related Java/Scala Software Development Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by end of 2018, only accept remote working offer available to Canadian legal worker.
-======>2) Note: This job application was automatically submitted by my machine learning trained robot running against Indeed.com.    "/>
+	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for a DevOps Development Lead Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by end of 2018, only accept remote working offer available to Canadian legal worker.
+======>2) Note: This job application was automatically submitted by my DevOps robot running against Indeed.com. The source code could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
 
 	<ate:elementActionDef id="eadSubmitResume"
 		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
