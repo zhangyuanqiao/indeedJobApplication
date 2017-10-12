@@ -136,21 +136,21 @@
 		elementFind="efQ0Raido" elementAction="eaClickYes">
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efQ0Raido"
-		findByValue="//input[@type='radio' and @value='0']"  indexOfSameElements="0"/>
+		findByValue="//input[@type='radio' and (@value='0' or @value='yes' or @value='YES')]"  indexOfSameElements="0"/>
 	<ate:clickAction id="eaClickYes" />
 	
 	<ate:elementActionDef id="eadAnswerYesForQ1Raido"
 		elementFind="efQ1Raido" elementAction="eaClickYes1">
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efQ1Raido"
-		findByValue="//input[@type='radio' and @value='0']"  indexOfSameElements="1"/>
+		findByValue="//input[@type='radio' and (@value='0' or @value='yes' or @value='YES')]"  indexOfSameElements="1"/>
 	<ate:clickAction id="eaClickYes1" />
 	
 	<ate:elementActionDef id="eadAnswerYesForQ2Raido"
 		elementFind="efQ2Raido" elementAction="eaClickYes2">
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efQ2Raido"
-		findByValue="//input[@type='radio' and @value='0']"  indexOfSameElements="2"/>
+		findByValue="//input[@type='radio' and (@value='0' or @value='yes' or @value='YES')]"  indexOfSameElements="2"/>
 	<ate:clickAction id="eaClickYes2" />
 
 	<ate:elementActionDef id="eadAnswerIntForInput0"
