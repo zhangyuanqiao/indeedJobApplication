@@ -167,7 +167,7 @@
 		<ate:elementStep id="stepFilloutMessage"
 			stepDescription="stepFilloutMessage" stepName="stepFilloutMessage"
 			targetStep="false" elementActionDef="eadFilloutMessage"
-			>
+			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 
 		<ate:elementStep id="stepContinueQuestions"
