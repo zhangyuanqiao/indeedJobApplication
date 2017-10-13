@@ -88,6 +88,9 @@
 	</ate:elementActionDef>
 	<ate:elementFindById id="efResumeSubmitButton"
 		findByValue="apply"  />
+		
+<!-- 		<ate:elementFindById id="efResumeSubmitButton" -->
+<!-- 		findByValue="apply-div"  /> -->
 	<ate:clickAction id="eaClickSubmitButton"/>
 	
 	<ate:elementActionDef id="eadSubmitResume2"
@@ -102,6 +105,8 @@
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efContinueAppButton"
 		findByValue="//a[@href='#next']"  />
+<!-- 		<ate:elementFindByXpath id="efContinueAppButton" -->
+<!-- 		findByValue="//div[@id='continue-div']"  /> -->
 	<ate:clickAction id="eaClickContinueButton"/>
 	
 	<ate:elementActionDef id="eadContinueApplication2"
