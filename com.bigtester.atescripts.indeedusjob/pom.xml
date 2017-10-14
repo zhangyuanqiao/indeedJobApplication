@@ -129,10 +129,10 @@ mvn com.lazerycode.selenium:driver-binary-downloader-maven-plugin:selenium -->
             <!-- automatically creates the classpath using all project dependencies,
                  also adding the project build directory -->
             <classpath/>
-            <argument>-Xms120m</argument>
+            <argument>-Xms256m</argument>
             
-            <argument> -Xmx2048m</argument>
-            <argument> -XX:MaxPermSize=1024m</argument>
+            <argument> -Xmx4096m</argument>
+            <argument> -XX:MaxPermSize=2048m</argument>
            
             <argument> org.bigtester.ate.TestProjectRunner</argument>
             <argument>indeedJobApplication/testproject.xml</argument>
