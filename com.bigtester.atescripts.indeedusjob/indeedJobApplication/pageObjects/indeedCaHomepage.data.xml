@@ -34,7 +34,7 @@
 		iteration="5" />
 
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="QA Automation"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Mandarin QA"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="6" />
 
