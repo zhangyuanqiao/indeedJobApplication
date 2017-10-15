@@ -29,7 +29,7 @@
 		iteration="4" />
 
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Application Developer"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Mandarin Java"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="5" />
 
