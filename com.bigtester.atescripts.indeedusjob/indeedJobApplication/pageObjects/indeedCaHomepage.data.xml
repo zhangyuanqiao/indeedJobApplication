@@ -27,6 +27,11 @@
 		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps Remote"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="4" />
+		
+		<ElementInputData FirstTimeExecution="No"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Mandarin DevOps"
+		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
+		iteration="5" />
 
 
 </dataset>
