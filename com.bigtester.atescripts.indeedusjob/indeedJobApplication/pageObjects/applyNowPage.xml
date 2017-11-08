@@ -81,7 +81,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for AI Machine Learning Related Java/Scala Software Development Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by end of 2018, only accept remote working offer available to Canadian legal worker.
+	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for AI Machine Learning Related Java/Scala Software Development Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by mid of 2018, only accept remote working offer available to Canadian legal worker.
 ======>2) Note: This job application was automatically submitted by my machine learning trained robot running against Indeed.com.    "/>
 
 	<ate:elementActionDef id="eadSubmitResume"
