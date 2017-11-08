@@ -81,7 +81,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for a DevOps Development Lead Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by end of 2018, only accept remote working offer available to Canadian legal worker.
+	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for a DevOps Development Lead Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by mid of 2018, only accept remote working offer available to Canadian legal worker.
 ======>2) Note: This job application was automatically submitted by my DevOps robot running against Indeed.com. The source code could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
 
 	<ate:elementActionDef id="eadSubmitResume"
