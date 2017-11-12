@@ -106,22 +106,18 @@
 			targetStep="false" elementActionDef="eadSwitchToApplyWindow">
 		</ate:elementStep>
 
-		<ate:javaCodedStep id="javaStep1" stepName="javaStep1" elementActionDef="com.bigtester.casestep.SaveAppliedJobReference" targetStep="false"
-		optionalStep="true"
-			correlatedOptionalStepsUtilInclusive="stepRepeatQuestionFilling"/>
-
+		
 		<ate:elementStep id="stepClickApplyNow"
 			stepDescription="stepClickApplyNow" stepName="stepClickApplyNow"
 			targetStep="false" elementActionDef="eadClickApplyNow"
 			optionalStep="true"
-			successConditionallyJumpToStep="stepFilloutApplicantName">
+			successConditionallyJumpToStep="mylaststep">
 		</ate:elementStep>
 		
 		<ate:elementStep id="stepClickApplyNow2"
 			stepDescription="stepClickApplyNow2" stepName="stepClickApplyNow2"
 			targetStep="false" elementActionDef="eadClickApplyNow2"
-			optionalStep="true"
-			correlatedOptionalStepsUtilInclusive="stepRepeatQuestionFilling">
+			optionalStep="true">
 		</ate:elementStep>
 
 		
