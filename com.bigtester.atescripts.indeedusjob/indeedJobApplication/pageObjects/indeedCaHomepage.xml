@@ -88,5 +88,8 @@
 	</ate:elementActionDef>
 	<ate:fileExportAction id="eaExportToFile"
 		fileNameWithAbsolutePath="cookies" />
-
+	<ate:pageElementExistenceAsserter
+		id="indeedHomepageElementExistenceAsserter" resultPage="indeedCaHomepage"
+		stepERValue="homepageLogo" />
+	
 </beans>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset>
-
+<STEPERELEMENTEXISTENCE FirstTimeExecution="Yes"
+		ElementFindBy="XPATH" ElementFindByValue="//img[@class='indeedLogo']"
+		AssertPriority="HIGH" PageName="indeedCaHomepage" StepErSetId="homepageLogo"
+		TestDataContext_IdColumn="5" />
+		
 	<STEPERELEMENTEXISTENCE FirstTimeExecution="Yes"
 		ElementFindBy="xpath" ElementFindByValue="//span[contains(., 'your account is created!')]"
 		AssertPriority="high" PageName="adminhomepage" StepErSetId="adminregistersuccessvid"

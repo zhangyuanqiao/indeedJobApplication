@@ -35,7 +35,11 @@
 
 		<ate:homeStep id="stepOpenHomePage" stepName="stepOpenHomePage"
 			stepDescription="open indeed home page" targetStep="false"
-			pageObject="indeedCaHomepage" />
+			pageObject="indeedCaHomepage" >
+			 <ate:asserterReferences>
+				<ate:ateXmlElementReference id="indeedHomepageElementExistenceAsserterRef" ateXmlElementID="indeedHomepageElementExistenceAsserter"/>
+			</ate:asserterReferences>
+		</ate:homeStep>
 
 		<ate:elementStep id="stepTypeInSearchKeyWordQA"
 			stepDescription="type in search key word QA" stepName="typeInSearchKeyWordQA"
