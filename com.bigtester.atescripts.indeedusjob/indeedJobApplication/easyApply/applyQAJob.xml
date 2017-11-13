@@ -279,7 +279,7 @@
 		</ate:elementStep>
 
 
-		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="1" endStepName="stepSubmitResume2" stepName="stepRepeatQuestionFilling" targetStep="false"/>
+<!-- 		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="1" endStepName="stepSubmitResume2" stepName="stepRepeatQuestionFilling" targetStep="false"/> -->
 
 
 
@@ -295,16 +295,16 @@
 
 		<ate:repeatStep id="stepRepeatApplySamePageJobs" startStepName="stepClickJobLink" numberOfIterations="1" endStepName="stepAcceptAlertInFocus" stepName="stepRepeatApplySamePageJobs" targetStep="false"/>
 
-		<ate:elementStep id="stepClickPagingNumber"
-			stepDescription="stepClickPagingNumber"
-			stepName="stepClickPagingNumber" targetStep="false"
-			optionalStep="true" elementActionDef="eadClickPagingNumber"
-			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs">
-		</ate:elementStep>
+<!-- 		<ate:elementStep id="stepClickPagingNumber" -->
+<!-- 			stepDescription="stepClickPagingNumber" -->
+<!-- 			stepName="stepClickPagingNumber" targetStep="false" -->
+<!-- 			optionalStep="true" elementActionDef="eadClickPagingNumber" -->
+<!-- 			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs"> -->
+<!-- 		</ate:elementStep> -->
 
-		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClosePopoverDialog" numberOfIterations="1" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
+<!-- 		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClosePopoverDialog" numberOfIterations="1" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/> -->
 
-		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="1" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
+<!-- 		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="1" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/> -->
 
 		<ate:lastStep id="mylaststep" stepName="mylaststep"
 			stepDescription="last step close browser" targetStep="false"

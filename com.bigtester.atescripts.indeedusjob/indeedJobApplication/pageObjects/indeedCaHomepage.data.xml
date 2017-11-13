@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset>
 <STEPERELEMENTEXISTENCE FirstTimeExecution="Yes"
-		ElementFindBy="XPATH" ElementFindByValue="//img[@class='1indeedLogo']"
+		ElementFindBy="XPATH" ElementFindByValue="//img[@class='indeedLogo']"
 		AssertPriority="HIGH" PageName="indeedCaHomepage" StepErSetId="homepageLogo"
 		TestDataContext_IdColumn="5" />
 		
