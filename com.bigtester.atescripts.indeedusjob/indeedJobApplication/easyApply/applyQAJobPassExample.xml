@@ -34,7 +34,7 @@
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
 		<ate:homeStep id="stepOpenHomePage" stepName="stepOpenHomePage"
-			stepDescription="open indeed home page" targetStep="false"
+			stepDescription="open indeed home page" targetStep="true"
 			pageObject="indeedCaHomepage" >
 			 <ate:asserterReferences>
 				<ate:ateXmlElementReference id="indeedHomepageElementExistenceAsserterRef" ateXmlElementID="indeedHomepageElementExistenceAsserter"/>
