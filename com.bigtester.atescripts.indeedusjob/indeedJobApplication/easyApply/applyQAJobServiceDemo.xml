@@ -54,11 +54,10 @@
 		<ate:elementStep id="stepClickApplyNow"
 			stepDescription="stepClickApplyNow" stepName="stepClickApplyNow"
 			targetStep="false" elementActionDef="eadClickApplyNow"
-			optionalStep="true"
-			correlatedOptionalStepsUtilInclusive="stepSvcFilloutJob">
+			optionalStep="true">
 		</ate:elementStep>
 
-		<ate:stepTypeServiceReference id="stepSvcFilloutJob" stepTypeServiceDefinitionID="svcFilloutJob"/>
+	<!--	<ate:stepTypeServiceReference id="stepSvcFilloutJob" stepTypeServiceDefinitionID="svcFilloutJob"/>-->
 
 		<ate:elementStep id="stepCloseApplyWindow"
 			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow"
@@ -70,7 +69,7 @@
 			targetStep="false" optionalStep="true" elementActionDef="eadAcceptAlertInFocus">
 		</ate:elementStep>
 
-		<ate:repeatStep id="stepRepeatApplySamePageJobs" startStepName="stepClickJobLink" numberOfIterations="5" endStepName="stepCloseApplyWindow" stepName="stepRepeatApplySamePageJobs" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatApplySamePageJobs" startStepName="stepClickJobLink" numberOfIterations="1" endStepName="stepCloseApplyWindow" stepName="stepRepeatApplySamePageJobs" targetStep="false"/>
 
 		<ate:elementStep id="stepClickPagingNumber"
 			stepDescription="stepClickPagingNumber"
@@ -79,7 +78,7 @@
 			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs">
 		</ate:elementStep>
 
-		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="5" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="1" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
 
 
 		<ate:lastStep id="mylaststep" stepName="mylaststep"
