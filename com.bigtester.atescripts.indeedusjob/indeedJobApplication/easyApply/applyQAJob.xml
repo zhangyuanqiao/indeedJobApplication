@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:ate="http://www.bigtester.org/schema/ate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:aop="http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
-                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
-                           http://www.springframework.org/schema/aop 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                           http://www.springframework.org/schema/aop
                            http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
-                           http://www.bigtester.org/schema/ate 
+                           http://www.bigtester.org/schema/ate
                            http://www.bigtester.org/schema/ate/ate-2.0.xsd">
 
 	<!-- this registers beans annotated with @Aspect -->
@@ -18,9 +18,9 @@
 	<import resource="../pageObjects/jobSearchResult.xml" />
 	<import resource="../pageObjects/applyNowPage.xml" />
 	<import resource="../pageObjects/lastPage.xml" />
-	
-	<!-- 
-	<ate:firefoxDriver  />  
+
+	<!--
+	<ate:firefoxDriver  />
 	<ate:chromeDriver   />
 	<ate:IEDriver       />
 	<ate:safariDriver   />
@@ -29,7 +29,7 @@
       -->
 <!--       <ate:firefoxDriver  /> -->
 <!-- 		<ate:chromeDriver  preserveCookies="true" startArguments="allow-file-access-from-files disable-web-security"/> -->
-<ate:sauceLabDriver  userName="zhouyibhic" accessKey="5b66a725-2fd8-4d53-9328-d8c988ac58c6" browserName="chrome" version="46"/> 
+<!-- <ate:sauceLabDriver  userName="zhouyibhic" accessKey="5b66a725-2fd8-4d53-9328-d8c988ac58c6" browserName="chrome" version="46"/>  -->
 	<!-- <ate:remoteChromeDriver url="http://192.168.0.100:4444/wd/hub"/>-->
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
@@ -41,7 +41,7 @@
 			stepDescription="type in search key word QA" stepName="typeInSearchKeyWordQA"
 			optionalStep="false" targetStep="false" elementActionDef="eadTypeInSearchKeyWordQA">
 		</ate:elementStep>
-				
+
 		<ate:elementStep id="stepClearWhereText"
 			stepDescription="clear where text" stepName="clearWhereText"
 			targetStep="false" elementActionDef="eadClearTextInWhere"
@@ -52,32 +52,32 @@
 <!-- 			stepDescription="type in search location, Montreal QC" stepName="typeInMontrealQC" -->
 <!-- 			targetStep="false" elementActionDef="eadTypeLocationInWhere"> -->
 <!-- 		</ate:elementStep> -->
-		
+
 		<ate:elementStep id="stepTypeInWindsorOn"
 			stepDescription="type in search location, Windsor" stepName="stepTypeInWindsorOn"
 			targetStep="false" elementActionDef="eadTypeWindsorInWhere">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepClickFindJobsButton"
 			stepDescription="stepClickFindJobsButton" stepName="clickFindJobsButton"
 			targetStep="false" elementActionDef="eadClickFindJobsButton"
 			pageObject="indeedCaHomepage">
 		</ate:elementStep>
-		
+
 <!-- 		<ate:elementStep id="stepSortResultByDate" -->
 <!-- 			stepDescription="stepSortResultByDate" stepName="stepSortResultByDate" -->
 <!-- 			targetStep="false" elementActionDef="eadClickSortByDate" optionalStep="true" -->
 <!-- 			> -->
 <!-- 		</ate:elementStep> -->
-		
-		
+
+
 		<ate:elementStep id="stepClosePopoverDialog"
 			stepDescription="stepClosePopoverDialog" stepName="stepClosePopoverDialog"
 			targetStep="false" elementActionDef="eadTypeClosePopoverDialog"
 			optionalStep="true"
 			pageObject="indeedCaHomepage">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepCloseEmailPopoverDialog"
 			stepDescription="stepCloseEmailPopoverDialog" stepName="stepCloseEmailPopoverDialog"
 			targetStep="false" elementActionDef="eadTypeCloseEmailPopoverDialog"
@@ -90,9 +90,9 @@
 			optionalStep="true"
 			pageObject="indeedCaHomepage">
 		</ate:elementStep>
-		
-		
-		
+
+
+
 		<ate:elementStep id="stepClickJobLink"
 			stepDescription="stepClickJobLink" stepName="stepClickJobLink"
 			targetStep="false" elementActionDef="eadClickNonAdsJobLink"
@@ -116,7 +116,7 @@
 			optionalStep="true"
 			successConditionallyJumpToStep="stepFilloutApplicantName">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepClickApplyNow2"
 			stepDescription="stepClickApplyNow2" stepName="stepClickApplyNow2"
 			targetStep="false" elementActionDef="eadClickApplyNow2"
@@ -139,13 +139,13 @@
 			correlatedOptionalStepsUtilInclusive="stepFilloutApplicantLastName"
 			>
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepFilloutApplicantLastName"
 			stepDescription="stepFilloutApplicantLastName" stepName="stepFilloutApplicantLastName"
 			targetStep="false" elementActionDef="eadFilloutApplicantLastName"
 			>
 		</ate:elementStep>
-		
+
 
 		<ate:elementStep id="stepFilloutApplicantEmail"
 			stepDescription="stepFilloutApplicantEmail" stepName="stepFilloutApplicantEmail"
@@ -175,9 +175,9 @@
 			targetStep="false" elementActionDef="eadContinueApplication" optionalStep="true"
 			successConditionallyJumpToStep="stepAnswerYesQ0"
 			searchOnlyOnPreviousSuccessIFrame="true">
-			
+
 		</ate:elementStep>
-		
+
 				<ate:elementStep id="stepContinueQuestions2"
 			stepDescription="stepContinueQuestions2" stepName="stepContinueQuestions2"
 			targetStep="false" elementActionDef="eadContinueApplication2" optionalStep="true"
@@ -229,34 +229,34 @@
 			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepAnswerIntQ1Input"
 			stepDescription="stepAnswerIntQ1Input" stepName="stepAnswerIntQ1Input"
 			targetStep="false" elementActionDef="eadAnswerIntForInput1" optionalStep="true"
 			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepAnswerIntQ2Input"
 			stepDescription="stepAnswerIntQ2Input" stepName="stepAnswerIntQ2Input"
 			targetStep="false" elementActionDef="eadAnswerIntForInput2" optionalStep="true"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepAnswerIntQ0Input-"
 			stepDescription="stepAnswerIntQ0Input-" stepName="stepAnswerIntQ0Input-"
 			targetStep="false" elementActionDef="eadAnswerIntForInput0-" optionalStep="true"
 			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input-"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepAnswerIntQ1Input-"
 			stepDescription="stepAnswerIntQ1Input-" stepName="stepAnswerIntQ1Input-"
 			targetStep="false" elementActionDef="eadAnswerIntForInput1-" optionalStep="true"
 			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input-"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepAnswerIntQ2Input-"
 			stepDescription="stepAnswerIntQ2Input-" stepName="stepAnswerIntQ2Input-"
 			targetStep="false" elementActionDef="eadAnswerIntForInput2-" optionalStep="true"
@@ -270,42 +270,42 @@
 			successConditionallyJumpToStep="stepCloseApplyWindow"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepSubmitResume2"
 			stepDescription="stepSubmitResume2" stepName="stepSubmitResume2"
 			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
 			successConditionallyJumpToStep="stepCloseApplyWindow"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
-		
+
+
 		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="1" endStepName="stepSubmitResume2" stepName="stepRepeatQuestionFilling" targetStep="false"/>
-		
-			
-		
+
+
+
 		<ate:elementStep id="stepCloseApplyWindow"
 			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow"
 			targetStep="false" elementActionDef="eadCloseApplyWindow">
 		</ate:elementStep>
-		
+
 		<ate:elementStep id="stepAcceptAlertInFocus"
 			stepDescription="stepAcceptAlertInFocus" stepName="stepAcceptAlertInFocus"
 			targetStep="false" optionalStep="true" elementActionDef="eadAcceptAlertInFocus">
 		</ate:elementStep>
-		
+
 		<ate:repeatStep id="stepRepeatApplySamePageJobs" startStepName="stepClickJobLink" numberOfIterations="9" endStepName="stepAcceptAlertInFocus" stepName="stepRepeatApplySamePageJobs" targetStep="false"/>
-		
+
 		<ate:elementStep id="stepClickPagingNumber"
 			stepDescription="stepClickPagingNumber"
 			stepName="stepClickPagingNumber" targetStep="false"
 			optionalStep="true" elementActionDef="eadClickPagingNumber"
 			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs">
 		</ate:elementStep>
-		
+
 		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClosePopoverDialog" numberOfIterations="19" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
-		
+
 		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="6" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
-		
+
 		<ate:lastStep id="mylaststep" stepName="mylaststep"
 			stepDescription="last step close browser" targetStep="false"
 			pageObject="myLastPage">

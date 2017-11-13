@@ -4,7 +4,7 @@
 
   <groupId>com.bigtester</groupId>
   <artifactId>com.bigtester.atescripts.indeedusjob</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>com.bigtester.atescripts.indeedusjob</name>
@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
- 
+
   </properties>
  <repositories>
     <repository>
@@ -26,16 +26,16 @@
 		<dependency>
 			<groupId>org.bigtester</groupId>
 			<artifactId>org.bigtester.ate.core</artifactId>
-			<version>0.1.5.2-SNAPSHOT</version>
+			<version>0.1.6-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>
 	<build>
 		<plugins>
-		
+
 		<!-- 			to update the browser driver run
 mvn com.lazerycode.selenium:driver-binary-downloader-maven-plugin:selenium -->
-			
+
 			<plugin>
 				<groupId>com.lazerycode.selenium</groupId>
 				<artifactId>driver-binary-downloader-maven-plugin</artifactId>
@@ -47,11 +47,11 @@ mvn com.lazerycode.selenium:driver-binary-downloader-maven-plugin:selenium -->
 					<downloadedZipFileDirectory>/tmp/zips</downloadedZipFileDirectory>
 					<!-- Location of a custom repository map -->
 					<customRepositoryMap>browserdriver/repo.xml</customRepositoryMap>
-					<!-- This will ensure that the plugin only downloads binaries for the 
-						current OS, this will override anything specified in the <operatingSystems> 
+					<!-- This will ensure that the plugin only downloads binaries for the
+						current OS, this will override anything specified in the <operatingSystems>
 						configuration -->
 					<onlyGetDriversForHostOperatingSystem>true</onlyGetDriversForHostOperatingSystem>
-					<!-- Operating systems you want to download binaries for (Only valid 
+					<!-- Operating systems you want to download binaries for (Only valid
 						options are: windows, linux, osx) -->
 					<operatingSystems>
 						<windows>true</windows>
@@ -62,23 +62,23 @@ mvn com.lazerycode.selenium:driver-binary-downloader-maven-plugin:selenium -->
 					<thirtyTwoBitBinaries>true</thirtyTwoBitBinaries>
 					<!-- Download 64bit binaries -->
 					<sixtyFourBitBinaries>true</sixtyFourBitBinaries>
-					<!-- If set to false will download every version available (Other filters 
+					<!-- If set to false will download every version available (Other filters
 						will be taken into account -->
 					<onlyGetLatestVersions>true</onlyGetLatestVersions>
-					<!-- Provide a list of drivers and binary versions to download (this 
+					<!-- Provide a list of drivers and binary versions to download (this
 						is a map so only one version can be specified per driver) -->
 					<!-- <getSpecificExecutableVersions> -->
 					<!-- <googlechrome>18</googlechrome> -->
 					<!-- </getSpecificExecutableVersions> -->
-					<!-- Throw an exception if any specified binary versions that the plugin 
+					<!-- Throw an exception if any specified binary versions that the plugin
 						tries to download do not exist -->
 					<throwExceptionIfSpecifiedVersionIsNotFound>false</throwExceptionIfSpecifiedVersionIsNotFound>
 					<!-- Number of times to attempt to download each file -->
 					<fileDownloadRetryAttempts>2</fileDownloadRetryAttempts>
-					<!-- Number of ms to wait before timing out when trying to connect to 
+					<!-- Number of ms to wait before timing out when trying to connect to
 						remote server to download file -->
 					<fileDownloadConnectTimeout>20000</fileDownloadConnectTimeout>
-					<!-- Number of ms to wait before timing out when trying to read file 
+					<!-- Number of ms to wait before timing out when trying to read file
 						from remote server -->
 					<fileDownloadReadTimeout>10000</fileDownloadReadTimeout>
 					<!-- Overwrite any existing binaries that have been downloaded and extracted -->
@@ -86,7 +86,7 @@ mvn com.lazerycode.selenium:driver-binary-downloader-maven-plugin:selenium -->
 					<!-- Check file hashes of downloaded files. Default: true -->
 					<checkFileHashes>true</checkFileHashes>
 					<!-- auto detect system proxy to use when downloading files -->
-					<!-- To specify an explicit proxy set the environment variables http.proxyHost 
+					<!-- To specify an explicit proxy set the environment variables http.proxyHost
 						and http.proxyPort -->
 					<useSystemProxy>true</useSystemProxy>
 				</configuration>
@@ -98,7 +98,7 @@ mvn com.lazerycode.selenium:driver-binary-downloader-maven-plugin:selenium -->
 					</execution>
 				</executions>
 			</plugin>
-		
+
 <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -124,16 +124,16 @@ mvn com.lazerycode.selenium:driver-binary-downloader-maven-plugin:selenium -->
           <argument>-Dlogback.configurationFile=indeedJobApplication/logback-production.xml</argument>
 <!--           <argument>-Xdebug</argument> -->
 <!--           <argument>-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8007</argument> -->
-          
+
             <argument>-classpath</argument>
             <!-- automatically creates the classpath using all project dependencies,
                  also adding the project build directory -->
             <classpath/>
             <argument>-Xms256m</argument>
-            
+
             <argument> -Xmx4096m</argument>
             <argument> -XX:MaxPermSize=2048m</argument>
-           
+
             <argument> org.bigtester.ate.TestProjectRunner</argument>
             <argument>indeedJobApplication/testproject.xml</argument>
           </arguments>
