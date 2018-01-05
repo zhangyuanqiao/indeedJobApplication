@@ -81,7 +81,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" 1) Career Objective: A software QA automation lead position =====> 2) Note: This job application was automatically submitted by my Selenium ATE automation test framework and its scripts. The source code of ATE framework and the scripts could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
+	<ate:assignValueAction id="eaMessageSent" dataValue=" 1) I sell only result. =====> 2) Note: This job application was automatically submitted by my Selenium ATE automation test framework and its scripts. The source code of ATE framework and the scripts could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
 
 	<ate:elementActionDef id="eadSubmitResume"
 		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
