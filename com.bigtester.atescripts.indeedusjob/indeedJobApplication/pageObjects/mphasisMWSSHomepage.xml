@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:ate="http://www.bigtester.org/schema/ate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+                           http://www.springframework.org/schema/aop 
+                           http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+                           http://www.bigtester.org/schema/ate 
+                           http://www.bigtester.org/schema/ate/ate-2.0.xsd">
+
+	<!-- this registers beans annotated with @Aspect -->
+	<aop:aspectj-autoproxy />
+
+	<import resource="classpath:META-INF/logger-reporter.xml" />
+	<import resource="classpath:META-INF/page_base_bean.xml" />
+
+	<ate:homePage id="mphasisMWSSHomepage" homeUrl="https://mwss.mphasis.com"
+		dataFile="indeedJobApplication/pageObjects/mphasisMWSSHomepage.data.xml" />
+
+	<ate:elementActionDef id="eadTypeInUserName"
+		elementFind="efUserName" elementAction="eaTypeUserName">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efUserName"
+		findByValue="ContentPlaceHolder1_txtEmployeeId"/>
+	<ate:sendKeysAction id="eaTypeUserName" dataValue="2351861" />
+	
+	<ate:elementActionDef id="eadTypeInPass"
+		elementFind="efPass" elementAction="eaTypeInPass">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efPass" findByValue="ContentPlaceHolder1_txtUserPassword"/>
+	<ate:sendKeysAction id="eaTypeInPass" dataValue="Hello1234567" />
+
+	<ate:elementActionDef id="eadClickLoginButton"
+		elementFind="efLoginButton" elementAction="eaClickLoginButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efLoginButton" findByValue="ContentPlaceHolder1_LoginButton"/>
+	<ate:clickAction id="eaClickLoginButton" />
+	
+	<ate:elementActionDef id="eadClickCheckInButton"
+		elementFind="efCheckInButton" elementAction="eaClickCheckInButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efCheckInButton" findByValue="ContentPlaceHolder1_btnPresent"/>
+	<ate:clickAction id="eaClickCheckInButton" />
+	
+	<ate:elementFindByXpath id="efCheckInSuccessElement" findByValue="//span[@id='ContentPlaceHolder1_lblErrorMessage' and contains(text(),'Check In done for current day')]"/>
+	<ate:pageElementExistenceAsserter 
+	 id="checkInSuccessElementAsserter" resultPage="mphasisMWSSHomepage" stepERValue="homePageVID"/>
+	
+</beans>
