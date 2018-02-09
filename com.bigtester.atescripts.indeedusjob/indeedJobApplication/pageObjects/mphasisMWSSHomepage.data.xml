@@ -2,7 +2,7 @@
 <dataset>
 
 	<STEPERELEMENTEXISTENCE FirstTimeExecution="Yes"
-		ElementFindBy="XPATH" ElementFindByValue="//span[contains(., 'Check In done for current day.')]"
+		ElementFindBy="XPATH" ElementFindByValue="//span[contains(., 'Check In done for current day.') or contains(., 'Attendance saved successfully')]"
 		AssertPriority="HIGH" PageName="mphasisMWSSHomepage" StepErSetId="homePageVID"
 		TestDataContext_IdColumn="5" />
 
