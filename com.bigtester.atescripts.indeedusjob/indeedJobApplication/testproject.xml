@@ -16,14 +16,14 @@
 	<import resource="classpath:META-INF/project_base_bean.xml" />
 
 
-	<ate:TestProject id="testproject" stepThinkTime="1"
+	<ate:TestProject id="testproject" stepThinkTime="20"
 		globalInitXmlFile="indeedJobApplication/data.xml">
 		
 		<ate:TestSuite id="easyApply" suiteName="easyApply">
 <!-- 		<ate:XmlTestCase -->
 <!-- 				testCaseFilePathName="indeedJobApplication/easyApply/applyQAJobServiceDemo.xml" /> -->
 			<ate:XmlTestCase
-				testCaseFilePathName="indeedJobApplication/easyApply/applyQAJob.xml" />
+				testCaseFilePathName="indeedJobApplication/easyApply/checkInMphasisMWSS.xml" />
 <!-- 			<ate:XmlTestCase -->
 <!-- 				testCaseFilePathName="dentistSmokeTest/backend_login/adminRegistration.xml" /> -->
 		</ate:TestSuite>
