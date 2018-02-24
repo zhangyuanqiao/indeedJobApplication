@@ -54,5 +54,7 @@
 <!-- 				</ate:CaseDependencies> -->
 <!-- 			</ate:XmlTestCase> -->
 <!-- 		</ate:TestSuite> -->
+<ate:mailer id="mailer" fromMailAddress="devops.automation.engine" toMailAddress="bigtester.prot@gmail.com"
+		smtpMailServerHost="smtp.gmail.com" smtpMailServerPort="23" smtpMailUserName="devops.automation.engine" smtpMailUserPassword="FedExPassw0rd"></ate:mailer>
 	</ate:TestProject>
 </beans>

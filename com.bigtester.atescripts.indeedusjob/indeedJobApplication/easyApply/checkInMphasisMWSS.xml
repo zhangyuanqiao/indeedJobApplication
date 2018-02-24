@@ -35,7 +35,7 @@
 
 		<ate:homeStep id="stepOpenHomePage" stepName="stepOpenHomePage"
 			stepDescription="open mphasisMWSSHomepage home page" targetStep="false"
-			pageObject="mphasisMWSSHomepage" />
+			pageObject="mphasisMWSSHomepage"/>
 
 		<ate:elementStep id="stepTypeInUserName"
 			stepDescription="type in User Name" stepName="stepTypeInUserName"
@@ -55,14 +55,14 @@
 		
 		<ate:elementStep id="stepLogin"
 			stepDescription="login" stepName="stepLogin"
-			targetStep="false" elementActionDef="eadClickLoginButton">
+			targetStep="false" elementActionDef="eadClickLoginButton" mailScreenShot="true">
 			<ate:asserterReferences id="assertSuccessCheckIn">
 				<ate:ateXmlElementReference id="checkInSuccessRef" ateXmlElementID="checkInSuccessElementAsserter"/>
 			</ate:asserterReferences>
 		</ate:elementStep>
 		<ate:elementStep id="stepClickCheckInButton"
 			stepDescription="check in" stepName="stepClickCheckInButton"
-			targetStep="true" elementActionDef="eadClickCheckInButton">
+			targetStep="true" elementActionDef="eadClickCheckInButton" mailScreenShot="true">
 			<ate:asserterReferences id="assertSuccessCheckIn">
 				<ate:ateXmlElementReference id="checkInSuccessRef" ateXmlElementID="checkInSuccessElementAsserter"/>
 			</ate:asserterReferences>
