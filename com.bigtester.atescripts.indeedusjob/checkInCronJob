@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+
+TODAY=$(date +%Y%m%d)
+echo $TODAY
+if grep -q $TODAY  /home/peidong/git/indeedJobApplication/com.bigtester.atescripts.indeedusjob/holidays; then
+   echo skip for $TODAY
+   echo Skipping holiday for $*
+   exit 0
+fi
+
+cd /home/peidong/git/indeedJobApplication/com.bigtester.atescripts.indeedusjob/
+mvn clean test
