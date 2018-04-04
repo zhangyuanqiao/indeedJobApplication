@@ -221,6 +221,14 @@
 	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />
 	<ate:alertDialogFindInCurrentFocus id="efAlertInFocus"/>
 	<ate:alertDialogAccept id="eaAcceptAlert"/>
+	
+	<ate:elementActionDef id="eadCloseSuccessSubmitPopup"
+		elementFind="efSubmitClosePopButton" elementAction="eaClickSubmitPopButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efSubmitClosePopButton"
+		findByValue="close-popup"/>
+	<ate:clickAction id="eaClickSubmitPopButton" />
+	
     
 	
 </beans>

@@ -285,20 +285,26 @@
 		<ate:elementStep id="stepSubmitResume"
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
 			targetStep="false" elementActionDef="eadSubmitResume" optionalStep="true"
-			successConditionallyJumpToStep="stepCloseApplyWindow"
-			stepSpecificThinkTime="20"
+			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
+			
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		
 		<ate:elementStep id="stepSubmitResume2"
 			stepDescription="stepSubmitResume2" stepName="stepSubmitResume2"
 			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
-			successConditionallyJumpToStep="stepCloseApplyWindow"
+			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
+			searchOnlyOnPreviousSuccessIFrame="true">
+		</ate:elementStep>
+		
+		<ate:elementStep id="stepCloseSuccessSubmitPopup"
+			stepDescription="stepCloseSuccessSubmitPopup" stepName="stepCloseSuccessSubmitPopup"
+			targetStep="false" elementActionDef="eadCloseSuccessSubmitPopup" optionalStep="true"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		
 		
-		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="4" endStepName="stepSubmitResume2" stepName="stepRepeatQuestionFilling" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="4" endStepName="stepCloseSuccessSubmitPopup" stepName="stepRepeatQuestionFilling" targetStep="false"/>
 		
 			
 		
