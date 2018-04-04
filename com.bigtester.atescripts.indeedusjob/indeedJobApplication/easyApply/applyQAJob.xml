@@ -300,6 +300,7 @@
 		<ate:elementStep id="stepCloseSuccessSubmitPopup"
 			stepDescription="stepCloseSuccessSubmitPopup" stepName="stepCloseSuccessSubmitPopup"
 			targetStep="false" elementActionDef="eadCloseSuccessSubmitPopup" optionalStep="true"
+			successConditionallyJumpToStep="stepAcceptAlertInFocus"
 			searchOnlyOnPreviousSuccessIFrame="false">
 		</ate:elementStep>
 		
