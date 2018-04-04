@@ -74,14 +74,14 @@
 	<ate:elementFindByName id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_resume_en_2018_USA_lead_bigtester.prot_noh.pdf" />
+		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_resume_en_2018_USA_architect_bigtester.prot_noh.pdf" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" 1) I sell only result. 2) Ready to relocate immediately. 3) This job application was automatically submitted by my Selenium ATE automation test framework and scripts. The source code of ATE framework and the scripts could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
+	<ate:assignValueAction id="eaMessageSent" dataValue=" 1) I am not selling myself, I sell only the result of my commitment."/>
 
 	<ate:elementActionDef id="eadSubmitResume"
 		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
