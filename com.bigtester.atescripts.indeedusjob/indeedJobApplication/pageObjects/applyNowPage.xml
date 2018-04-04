@@ -66,7 +66,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efApplicantPhoneNumber"
 		findByValue="applicant.phoneNumber"  />
-	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="6475511505"/>
+	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="6823471363"/>
 	
 	<ate:elementActionDef id="eadApplyChooseFile"
 		elementFind="efApplyNowChooseFile" elementAction="eaApplyChooseFile">
