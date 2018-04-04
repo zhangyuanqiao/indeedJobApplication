@@ -101,10 +101,10 @@
 			pageObject="jobSearchResult">
 		</ate:elementStep>
 
-		<ate:elementStep id="stepSwitchToApplyWindow"
-			stepDescription="stepSwitchToApplyWindow" stepName="stepSwitchToApplyWindow"
-			targetStep="false" elementActionDef="eadSwitchToApplyWindow">
-		</ate:elementStep>
+<!-- 		<ate:elementStep id="stepSwitchToApplyWindow" -->
+<!-- 			stepDescription="stepSwitchToApplyWindow" stepName="stepSwitchToApplyWindow" -->
+<!-- 			targetStep="false" elementActionDef="eadSwitchToApplyWindow" optionalStep="true"> -->
+<!-- 		</ate:elementStep> -->
 
 		<ate:javaCodedStep id="javaStep1" stepName="javaStep1" elementActionDef="com.bigtester.casestep.SaveAppliedJobReference" targetStep="false"
 		optionalStep="true"
@@ -302,10 +302,10 @@
 		
 			
 		
-		<ate:elementStep id="stepCloseApplyWindow"
-			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow"
-			targetStep="false" elementActionDef="eadCloseApplyWindow">
-		</ate:elementStep>
+<!-- 		<ate:elementStep id="stepCloseApplyWindow" -->
+<!-- 			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow" -->
+<!-- 			targetStep="false" elementActionDef="eadCloseApplyWindow"> -->
+<!-- 		</ate:elementStep> -->
 		
 		<ate:elementStep id="stepAcceptAlertInFocus"
 			stepDescription="stepAcceptAlertInFocus" stepName="stepAcceptAlertInFocus"
