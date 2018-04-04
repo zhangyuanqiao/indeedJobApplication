@@ -208,6 +208,7 @@
 		<ate:elementStep id="stepSelect1Q0"
 			stepDescription="stepSelect1Q0" stepName="stepSelect1Q0"
 			targetStep="false" elementActionDef="eadSelect1_0" optionalStep="true"
+			correlatedOptionalStepsUtilInclusive="stepSelect1Q2"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		<ate:elementStep id="stepSelect1Q1"
@@ -285,6 +286,7 @@
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
 			targetStep="false" elementActionDef="eadSubmitResume" optionalStep="true"
 			successConditionallyJumpToStep="stepCloseApplyWindow"
+			stepSpecificThinkTime="20"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		
