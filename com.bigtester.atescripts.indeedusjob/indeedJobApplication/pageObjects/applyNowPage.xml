@@ -117,7 +117,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindById id="efQ0"
 		findByValue="q_0"  />
-	<ate:dropdownListSelectAction id="eaSelectYes" selections="Yes"/>
+	<ate:dropdownListSelectAction id="eaSelectYes" selectionType="VISIBLE_TEXT" selections="Yes"/>
 	
 	<ate:elementActionDef id="eadAnswerYesForQ1"
 		elementFind="efQ1" elementAction="eaSelectYes">
@@ -137,6 +137,30 @@
 	<ate:elementFindByXpath id="efQ0Raido"
 		findByValue="//input[@type='radio' and (@value='0' or @value='yes' or @value='YES' or @value='Yes')]"  indexOfSameElements="0"/>
 	<ate:clickAction id="eaClickYes" />
+	
+	
+	<ate:elementActionDef id="eadSelect1_0"
+		elementFind="efQ0Selections0" elementAction="eaSelections0">
+	</ate:elementActionDef>
+	<ate:elementActionDef id="eadSelect1_1"
+		elementFind="efQ0Selections1" elementAction="eaSelections1">
+	</ate:elementActionDef>
+	<ate:elementActionDef id="eadSelect1_2"
+		elementFind="efQ0Selections2" elementAction="eaSelections2">
+	</ate:elementActionDef>
+	
+	<ate:elementFindByXpath id="efQ0Selections0"
+		findByValue="//select[starts-with(@id,'select')]"  indexOfSameElements="0"/>
+	<ate:dropdownListSelectAction id="eaSelections0" selectionType="INDEX" selections="1"/>
+	
+	<ate:elementFindByXpath id="efQ0Selections1"
+		findByValue="//select[starts-with(@id,'select')]"  indexOfSameElements="1"/>
+	<ate:dropdownListSelectAction id="eaSelections1" selectionType="INDEX" selections="1"/>
+	
+	<ate:elementFindByXpath id="efQ0Selections2"
+		findByValue="//select[starts-with(@id,'select')]"  indexOfSameElements="2"/>
+	<ate:dropdownListSelectAction id="eaSelections2" selectionType="INDEX" selections="1"/>
+	
 	
 	<ate:elementActionDef id="eadAnswerYesForQ1Raido"
 		elementFind="efQ1Raido" elementAction="eaClickYes1">

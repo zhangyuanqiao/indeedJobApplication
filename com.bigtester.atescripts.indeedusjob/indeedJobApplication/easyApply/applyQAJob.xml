@@ -204,6 +204,23 @@
 			targetStep="false" elementActionDef="eadAnswerYesForQ2" optionalStep="true"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
+		
+		<ate:elementStep id="stepSelect1Q0"
+			stepDescription="stepSelect1Q0" stepName="stepSelect1Q0"
+			targetStep="false" elementActionDef="eadSelect1_0" optionalStep="true"
+			searchOnlyOnPreviousSuccessIFrame="true">
+		</ate:elementStep>
+		<ate:elementStep id="stepSelect1Q1"
+			stepDescription="stepSelect1Q1" stepName="stepSelect1Q1"
+			targetStep="false" elementActionDef="eadSelect1_1" optionalStep="true"
+			searchOnlyOnPreviousSuccessIFrame="true">
+		</ate:elementStep>
+		<ate:elementStep id="stepSelect1Q2"
+			stepDescription="stepSelect1Q2" stepName="stepSelect1Q2"
+			targetStep="false" elementActionDef="eadSelect1_2" optionalStep="true"
+			searchOnlyOnPreviousSuccessIFrame="true">
+		</ate:elementStep>
+		
 
 		<ate:elementStep id="stepAnswerYesQ0Radio"
 			stepDescription="stepAnswerYesQ0Radio" stepName="stepAnswerYesQ0Radio"
