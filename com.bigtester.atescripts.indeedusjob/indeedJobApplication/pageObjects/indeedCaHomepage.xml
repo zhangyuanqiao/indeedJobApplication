@@ -52,6 +52,13 @@
 		findByValue="prime-popover-close-button"/>
 	<ate:clickAction id="eaClickPopOverButton" />
 	
+	<ate:elementActionDef id="eadTypeClosePopoverXDialog"
+		elementFind="efPopoverCloseBXutton" elementAction="eaClickPopOverXButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efPopoverCloseXButton"
+		findByValue="popover-x"/>
+	<ate:clickAction id="eaClickPopOverXButton" />
+	
 	<ate:elementActionDef id="eadTypeCloseEmailPopoverDialog"
 		elementFind="efEmailPopoverCloseButton" elementAction="eaClickEmailPopOverButton">
 	</ate:elementActionDef>

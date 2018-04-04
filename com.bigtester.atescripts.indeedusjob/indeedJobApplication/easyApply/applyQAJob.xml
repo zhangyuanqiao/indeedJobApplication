@@ -300,7 +300,7 @@
 		<ate:elementStep id="stepCloseSuccessSubmitPopup"
 			stepDescription="stepCloseSuccessSubmitPopup" stepName="stepCloseSuccessSubmitPopup"
 			targetStep="false" elementActionDef="eadCloseSuccessSubmitPopup" optionalStep="true"
-			successConditionallyJumpToStep="stepAcceptAlertInFocus"
+			successConditionallyJumpToStep="stepClosePopoverXDialog"
 			searchOnlyOnPreviousSuccessIFrame="false">
 		</ate:elementStep>
 		
@@ -313,7 +313,12 @@
 <!-- 			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow" -->
 <!-- 			targetStep="false" elementActionDef="eadCloseApplyWindow"> -->
 <!-- 		</ate:elementStep> -->
-		
+		<ate:elementStep id="stepClosePopoverXDialog"
+			stepDescription="stepClosePopoverXDialog" stepName="stepClosePopoverXDialog"
+			targetStep="false" elementActionDef="eadTypeClosePopoverXDialog"
+			optionalStep="true"
+			>
+		</ate:elementStep>
 		<ate:elementStep id="stepAcceptAlertInFocus"
 			stepDescription="stepAcceptAlertInFocus" stepName="stepAcceptAlertInFocus"
 			targetStep="false" optionalStep="true" elementActionDef="eadAcceptAlertInFocus">
