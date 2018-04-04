@@ -296,7 +296,7 @@
 		</ate:elementStep>
 		
 		
-		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="1" endStepName="stepSubmitResume2" stepName="stepRepeatQuestionFilling" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="2" endStepName="stepSubmitResume2" stepName="stepRepeatQuestionFilling" targetStep="false"/>
 		
 			
 		
