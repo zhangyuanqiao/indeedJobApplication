@@ -53,7 +53,7 @@
 	<ate:clickAction id="eaClickPopOverButton" />
 	
 	<ate:elementActionDef id="eadTypeClosePopoverXDialog"
-		elementFind="efPopoverCloseBXutton" elementAction="eaClickPopOverXButton">
+		elementFind="efPopoverCloseXButton" elementAction="eaClickPopOverXButton">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efPopoverCloseXButton"
 		findByValue="popover-x"/>

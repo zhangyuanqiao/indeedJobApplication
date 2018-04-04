@@ -90,7 +90,7 @@
 	<logger name="org.bigtester" level="ALL" />
 	<root level="ALL">
 		<appender-ref ref="STDOUT" />
-<!-- 		<appender-ref ref="SystemLog" /> -->
+		<appender-ref ref="SystemLog" />
 		<appender-ref ref="ApplicationLog" />
 	</root>
 </configuration>
