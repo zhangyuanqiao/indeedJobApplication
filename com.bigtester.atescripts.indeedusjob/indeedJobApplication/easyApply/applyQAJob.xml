@@ -294,6 +294,7 @@
 			stepDescription="stepSubmitResume2" stepName="stepSubmitResume2"
 			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
 			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
+			correlatedOptionalStepsUtilInclusive="stepCloseSuccessSubmitPopup"
 			searchOnlyOnPreviousSuccessIFrame="false">
 		</ate:elementStep>
 		
