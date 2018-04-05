@@ -174,7 +174,7 @@
 			stepDescription="stepContinueQuestions" stepName="stepContinueQuestions"
 			targetStep="false" elementActionDef="eadContinueApplication" optionalStep="true"
 			successConditionallyJumpToStep="stepAnswerYesQ0"
-			searchOnlyOnPreviousSuccessIFrame="false">
+			searchOnlyOnPreviousSuccessIFrame="true">
 			
 		</ate:elementStep>
 		
@@ -182,14 +182,14 @@
 			stepDescription="stepContinueQuestions2" stepName="stepContinueQuestions2"
 			targetStep="false" elementActionDef="eadContinueApplication2" optionalStep="true"
 			correlatedOptionalStepsUtilInclusive="stepAnswerIntQ2Input-"
-			searchOnlyOnPreviousSuccessIFrame="false">
+			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 
 		<ate:elementStep id="stepAnswerYesQ0"
 			stepDescription="stepAnswerYesQ0" stepName="stepAnswerYesQ0"
 			targetStep="false" elementActionDef="eadAnswerYesForQ0" optionalStep="true"
 			correlatedOptionalStepsUtilInclusive="stepAnswerYesQ2"
-			searchOnlyOnPreviousSuccessIFrame="false">
+			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 
 		<ate:elementStep id="stepAnswerYesQ1"
@@ -287,7 +287,7 @@
 			targetStep="false" elementActionDef="eadSubmitResume" optionalStep="true"
 			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
 			
-			searchOnlyOnPreviousSuccessIFrame="false">
+			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		
 		<ate:elementStep id="stepSubmitResume2"
@@ -295,14 +295,14 @@
 			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
 			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
 			correlatedOptionalStepsUtilInclusive="stepCloseSuccessSubmitPopup"
-			searchOnlyOnPreviousSuccessIFrame="false">
+			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		
 		<ate:elementStep id="stepCloseSuccessSubmitPopup"
 			stepDescription="stepCloseSuccessSubmitPopup" stepName="stepCloseSuccessSubmitPopup"
 			targetStep="false" elementActionDef="eadCloseSuccessSubmitPopup" optionalStep="true"
 			successConditionallyJumpToStep="stepClosePopoverXDialog"
-			searchOnlyOnPreviousSuccessIFrame="false">
+			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		
 		
