@@ -294,17 +294,22 @@
 			stepDescription="stepSubmitResume2" stepName="stepSubmitResume2"
 			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
 			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
-			correlatedOptionalStepsUtilInclusive="stepCloseSuccessSubmitPopup"
+			correlatedOptionalStepsUtilInclusive="stepClosePopoverXDialog"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 		
 		<ate:elementStep id="stepCloseSuccessSubmitPopup"
 			stepDescription="stepCloseSuccessSubmitPopup" stepName="stepCloseSuccessSubmitPopup"
 			targetStep="false" elementActionDef="eadCloseSuccessSubmitPopup" optionalStep="true"
-			successConditionallyJumpToStep="stepClosePopoverXDialog"
+			successConditionallyJumpToStep="stepAcceptAlertInFocus"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+		<ate:elementStep id="stepClosePopoverXDialog"
+			stepDescription="stepClosePopoverXDialog" stepName="stepClosePopoverXDialog"
+			targetStep="false" elementActionDef="eadTypeClosePopoverXDialog"
+			optionalStep="true"
+			>
+		</ate:elementStep>
 		
 		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="4" endStepName="stepCloseSuccessSubmitPopup" stepName="stepRepeatQuestionFilling" targetStep="false"/>
 		
@@ -314,12 +319,7 @@
 <!-- 			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow" -->
 <!-- 			targetStep="false" elementActionDef="eadCloseApplyWindow"> -->
 <!-- 		</ate:elementStep> -->
-		<ate:elementStep id="stepClosePopoverXDialog"
-			stepDescription="stepClosePopoverXDialog" stepName="stepClosePopoverXDialog"
-			targetStep="false" elementActionDef="eadTypeClosePopoverXDialog"
-			optionalStep="true"
-			>
-		</ate:elementStep>
+		
 		<ate:elementStep id="stepAcceptAlertInFocus"
 			stepDescription="stepAcceptAlertInFocus" stepName="stepAcceptAlertInFocus"
 			targetStep="false" optionalStep="true" elementActionDef="eadAcceptAlertInFocus">
