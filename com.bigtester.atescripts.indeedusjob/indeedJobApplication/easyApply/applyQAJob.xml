@@ -312,7 +312,7 @@
 			>
 		</ate:elementStep>
 		
-		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="4" endStepName="stepCloseSuccessSubmitPopup" stepName="stepRepeatQuestionFilling" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatQuestionFilling" startStepName="stepContinueQuestions" numberOfIterations="4" endStepName="stepClosePopoverXDialog" stepName="stepRepeatQuestionFilling" targetStep="false"/>
 		
 			
 		
