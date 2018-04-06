@@ -75,6 +75,8 @@
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
 		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_resume_en_2018_USA_architect_bigtester.prot_noh.pdf" />
+<!-- <ate:uploadFileAction id="eaApplyChooseFile"	 -->
+<!-- 		fileNameWithAbsolutePath="/home/peidong/peidonghu_resume_en_2018_USA_architect_bigtester.prot_noh.pdf" /> -->
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
@@ -228,6 +230,13 @@
 	<ate:elementFindById id="efSubmitClosePopButton"
 		findByValue="close-popup"/>
 	<ate:clickAction id="eaClickSubmitPopButton" />
+	
+	<ate:elementActionDef id="eadCloseApplyDialogBG"
+		elementFind="efCloseApplyDialogBG" elementAction="eaCloseApplyDialogBG">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efCloseApplyDialogBG"
+		findByValue="//div[@class='indeed-apply-popup-bg']"/>
+	<ate:clickAction id="eaCloseApplyDialogBG" />
 	
     
 	

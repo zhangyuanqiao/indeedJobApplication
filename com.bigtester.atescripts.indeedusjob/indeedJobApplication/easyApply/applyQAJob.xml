@@ -19,9 +19,9 @@
 	<import resource="../pageObjects/applyNowPage.xml" />
 	<import resource="../pageObjects/lastPage.xml" />
 	
-	<!-- 
+	
 	<ate:firefoxDriver  />  
-	<ate:chromeDriver   />
+	<!-- <ate:chromeDriver   />
 	<ate:IEDriver       />
 	<ate:safariDriver   />
 	<ate:operaDriver    />
@@ -30,7 +30,7 @@
 <!--       <ate:firefoxDriver  /> -->
 <!-- 		<ate:chromeDriver  preserveCookies="true" startArguments="allow-file-access-from-files disable-web-security"/> -->
 <!-- <ate:sauceLabDriver  userName="zhouyibhic" accessKey="5b66a725-2fd8-4d53-9328-d8c988ac58c6" browserName="chrome" version="46"/> -->
-	<ate:remoteFirefoxDriver url="http://172.17.0.1:4444/wd/hub"/>
+<!-- 	<ate:remoteFirefoxDriver url="http://172.17.0.1:4444/wd/hub"/> -->
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
 		<ate:homeStep id="stepOpenHomePage" stepName="stepOpenHomePage"
@@ -285,7 +285,7 @@
 		<ate:elementStep id="stepSubmitResume"
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
 			targetStep="false" elementActionDef="eadSubmitResume" optionalStep="true"
-			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
+			successConditionallyJumpToStep="stepCloseApplyWindow"
 			
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
@@ -293,11 +293,12 @@
 		<ate:elementStep id="stepSubmitResume2"
 			stepDescription="stepSubmitResume2" stepName="stepSubmitResume2"
 			targetStep="false" elementActionDef="eadSubmitResume2" optionalStep="true"
-			successConditionallyJumpToStep="stepCloseSuccessSubmitPopup"
-			correlatedOptionalStepsUtilInclusive="stepClosePopoverXDialog"
+			successConditionallyJumpToStep="stepCloseApplyWindow"
+		correlatedOptionalStepsUtilInclusive="stepClosePopoverXDialog"			
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		
+<!-- 		correlatedOptionalStepsUtilInclusive="stepClosePopoverXDialog" -->
+
 		<ate:elementStep id="stepCloseSuccessSubmitPopup"
 			stepDescription="stepCloseSuccessSubmitPopup" stepName="stepCloseSuccessSubmitPopup"
 			targetStep="false" elementActionDef="eadCloseSuccessSubmitPopup" optionalStep="true"
@@ -319,6 +320,15 @@
 <!-- 			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow" -->
 <!-- 			targetStep="false" elementActionDef="eadCloseApplyWindow"> -->
 <!-- 		</ate:elementStep> -->
+
+<!-- 		bbbbbbbbbbbbb -->
+				<ate:elementStep id="stepCloseApplyWindow"
+			stepDescription="stepCloseApplyWindow" stepName="stepCloseApplyWindow"
+			optionalStep="true"
+			targetStep="false" elementActionDef="eadCloseApplyDialogBG">
+		</ate:elementStep>
+<!-- 		aaaaaaaaaaaaaa -->
+		
 		
 		<ate:elementStep id="stepAcceptAlertInFocus"
 			stepDescription="stepAcceptAlertInFocus" stepName="stepAcceptAlertInFocus"
