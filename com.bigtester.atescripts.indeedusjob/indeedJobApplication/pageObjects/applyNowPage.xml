@@ -59,14 +59,14 @@
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efApplicantEmail"
 		findByValue="applicant.email"  />
-	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="bigtester.prot@gmail.com"/>
+	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="zhouyibhic@gmail.com"/>
 
 	<ate:elementActionDef id="eadFilloutApplicantPhoneNumber"
 		elementFind="efApplicantPhoneNumber" elementAction="eaFilloutApplicantPhoneNumber">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efApplicantPhoneNumber"
 		findByValue="applicant.phoneNumber"  />
-	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="6475511505"/>
+	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="6823471363"/>
 	
 	<ate:elementActionDef id="eadApplyChooseFile"
 		elementFind="efApplyNowChooseFile" elementAction="eaApplyChooseFile">
@@ -74,15 +74,14 @@
 	<ate:elementFindByName id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_2017_oct_USA_devOps.pdf" />
+		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_resume_en_2018_USA_architect_devOps_noh_mymail.pdf" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" ======>0) Looking for a DevOps Development Lead Job.  =====> 1) Relocation Statement: I am now living in Eastern Time zone. EXCEPT short term contract, I can NOT relocate by mid of 2018, only accept remote working offer available to Canadian legal worker.
-======>2) Note: This job application was automatically submitted by my DevOps robot running against Indeed.com. The source code could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
+	<ate:assignValueAction id="eaMessageSent" dataValue=" I sell only the result. "/>
 
 	<ate:elementActionDef id="eadSubmitResume"
 		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
@@ -118,7 +117,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindById id="efQ0"
 		findByValue="q_0"  />
-	<ate:dropdownListSelectAction id="eaSelectYes" selections="Yes"/>
+	<ate:dropdownListSelectAction id="eaSelectYes" selectionType="VISIBLE_TEXT" selections="Yes"/>
 	
 	<ate:elementActionDef id="eadAnswerYesForQ1"
 		elementFind="efQ1" elementAction="eaSelectYes">
@@ -194,10 +193,46 @@
 	<ate:elementFindByXpath id="efQ2TypeInt-"
 		findByValue="//input[@type='text' and contains(@id,'input-q')]"  indexOfSameElements="2"/>
 	
+<ate:elementActionDef id="eadSelect1_0"
+ 		elementFind="efQ0Selections0" elementAction="eaSelections0">
+ 	</ate:elementActionDef>
+ 	<ate:elementActionDef id="eadSelect1_1"
+ 		elementFind="efQ0Selections1" elementAction="eaSelections1">
+ 	</ate:elementActionDef>
+ 	<ate:elementActionDef id="eadSelect1_2"
+ 		elementFind="efQ0Selections2" elementAction="eaSelections2">
+ 	</ate:elementActionDef>
+ 	
+ 	<ate:elementFindByXpath id="efQ0Selections0"
+ 		findByValue="//select[starts-with(@id,'select')]"  indexOfSameElements="0"/>
+ 	<ate:dropdownListSelectAction id="eaSelections0" selectionType="INDEX" selections="1"/>
+ 	
+ 	<ate:elementFindByXpath id="efQ0Selections1"
+ 		findByValue="//select[starts-with(@id,'select')]"  indexOfSameElements="1"/>
+ 	<ate:dropdownListSelectAction id="eaSelections1" selectionType="INDEX" selections="1"/>
+ 	
+ 	<ate:elementFindByXpath id="efQ0Selections2"
+ 		findByValue="//select[starts-with(@id,'select')]"  indexOfSameElements="2"/>
+ 	<ate:dropdownListSelectAction id="eaSelections2" selectionType="INDEX" selections="1"/>
+
+
 
 	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />
 	<ate:alertDialogFindInCurrentFocus id="efAlertInFocus"/>
 	<ate:alertDialogAccept id="eaAcceptAlert"/>
     
+	<ate:elementActionDef id="eadCloseSuccessSubmitPopup"
+		elementFind="efSubmitClosePopButton" elementAction="eaClickSubmitPopButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efSubmitClosePopButton"
+		findByValue="close-popup"/>
+	<ate:clickAction id="eaClickSubmitPopButton" />
+	
+	<ate:elementActionDef id="eadCloseApplyDialogBG"
+		elementFind="efCloseApplyDialogBG" elementAction="eaCloseApplyDialogBG">
+	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efCloseApplyDialogBG"
+		findByValue="//div[@class='indeed-apply-popup-bg']"/>
+	<ate:clickAction id="eaCloseApplyDialogBG" />
 	
 </beans>

@@ -40,7 +40,7 @@
 	<ate:elementActionDef id="eadTypeWindsorInWhere"
 		elementFind="efWhere" elementAction="eaTypeWindsor">
 	</ate:elementActionDef>
-	<ate:sendKeysAction id="eaTypeWindsor" dataValue="United States" />
+	<ate:sendKeysAction id="eaTypeWindsor" dataValue="Dallas-Fort Worth, TX" />
 	
 <!-- 	<ate:runTimeDataHolder id="Montreal1, QC" -->
 <!-- 		dataHolderType="ManualAssigned" dataType="Text" dataValue="Montreal, QC" /> -->
@@ -51,6 +51,13 @@
 	<ate:elementFindById id="efPopoverCloseButton"
 		findByValue="prime-popover-close-button"/>
 	<ate:clickAction id="eaClickPopOverButton" />
+	
+	<ate:elementActionDef id="eadTypeClosePopoverXDialog"
+		elementFind="efPopoverCloseXButton" elementAction="eaClickPopOverXButton">
+	</ate:elementActionDef>
+	<ate:elementFindById id="efPopoverCloseXButton"
+		findByValue="popover-x"/>
+	<ate:clickAction id="eaClickPopOverXButton" />
 	
 	<ate:elementActionDef id="eadTypeCloseEmailPopoverDialog"
 		elementFind="efEmailPopoverCloseButton" elementAction="eaClickEmailPopOverButton">
