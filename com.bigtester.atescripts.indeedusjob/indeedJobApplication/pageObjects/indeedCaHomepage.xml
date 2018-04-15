@@ -40,8 +40,10 @@
 	<ate:elementActionDef id="eadTypeWindsorInWhere"
 		elementFind="efWhere" elementAction="eaTypeWindsor">
 	</ate:elementActionDef>
-	<ate:sendKeysAction id="eaTypeWindsor" dataValue="Dallas-Fort Worth, TX" />
+	<ate:sendKeysAction id="eaTypeWindsor" dataValue="texas, usa" />
 	
+<!-- 	</ate:elementActionDef> -->
+<!-- 	<ate:sendKeysAction id="eaTypeWindsor" dataValue="Dallas-Fort Worth, TX" /> -->
 <!-- 	<ate:runTimeDataHolder id="Montreal1, QC" -->
 <!-- 		dataHolderType="ManualAssigned" dataType="Text" dataValue="Montreal, QC" /> -->
 
