@@ -232,11 +232,12 @@
 	<ate:clickAction id="eaClickSubmitPopButton" />
 	
 	<ate:elementActionDef id="eadCloseApplyDialogBG"
-		elementFind="efCloseApplyDialogBG" elementAction="eaCloseApplyDialogBG">
+		elementFind="efCloseApplyDialogBG" elementAction="eaCloseApplyDialogBGByJsCode">
 	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efCloseApplyDialogBG"
 		findByValue="//div[@class='indeed-apply-popup-bg']"/>
-	<ate:clickAction id="eaCloseApplyDialogBG" />
+	<ate:injectJsAction id="eaCloseApplyDialogBGByJsCode" javaScriptCode="arguments[0].style.ariaHidden='false'; arguments[0].style.display='none';"></ate:injectJsAction>
+<!-- 	<ate:clickAction id="eaCloseApplyDialogBG" /> -->
 	
     
 	
