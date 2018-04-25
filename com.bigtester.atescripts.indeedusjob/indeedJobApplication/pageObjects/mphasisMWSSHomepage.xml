@@ -29,7 +29,7 @@
 		elementFind="efPass" elementAction="eaTypeInPass">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efPass" findByValue="ContentPlaceHolder1_txtUserPassword"/>
-	<ate:sendKeysAction id="eaTypeInPass" dataValue="Hello1234567" />
+	<ate:sendKeysAction id="eaTypeInPass" dataValue="Lucent1975" />
 
 	<ate:elementActionDef id="eadClickLoginButton"
 		elementFind="efLoginButton" elementAction="eaClickLoginButton">
