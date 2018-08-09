@@ -55,7 +55,8 @@ public class SaveAppliedJobReference extends AbstractBaseJavaCodedStep
 	 */
 	public void doStep(@Nullable IStepJumpingEnclosedContainer jumpingContainer) throws StepExecutionException,
 			PageValidationException, RuntimeDataException {
-		WebElement applyButtonLink = getMyWebDriver().getWebDriverInstance().findElement(By.xpath("(//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied'])[1]"));
+//		WebElement applyButtonLink = getMyWebDriver().getWebDriverInstance().findElement(By.xpath("(//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied'])[0]"));
+		WebElement applyButtonLink = getMyWebDriver().getWebDriverInstance().findElement(By.xpath("(//span[@data-indeed-apply-jobid])[1]"));
 		String jobApplyID = applyButtonLink.getAttribute("data-indeed-apply-jobid");
 		try {
 			File yourFile = new File(JOBREFERENCESSAVEFILE);

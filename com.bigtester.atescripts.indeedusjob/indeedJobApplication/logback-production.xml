@@ -88,7 +88,7 @@
 	</appender>
 
 	<logger name="org.bigtester" level="ALL" />
-	<root level="ALL">
+	<root level="ERROR">
 		<appender-ref ref="STDOUT" />
 <!-- 		<appender-ref ref="SystemLog" /> -->
 		<appender-ref ref="ApplicationLog" />
