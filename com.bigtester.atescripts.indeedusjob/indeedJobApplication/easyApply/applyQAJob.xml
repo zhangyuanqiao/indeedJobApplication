@@ -205,8 +205,8 @@
 			targetStep="false" elementActionDef="eadAnswerYesForQ2" optionalStep="true"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
-		<ate:elementStep id="stepChooseFile"
-			stepDescription="stepChooseFile" stepName="stepChooseFile"
+		<ate:elementStep id="stepChooseFile2"
+			stepDescription="stepChooseFile2" stepName="stepChooseFile2"
 			targetStep="false" elementActionDef="eadApplyChooseFile" optionalStep="true"
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
