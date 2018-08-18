@@ -21,8 +21,10 @@
 	<ate:elementActionDef id="eadClickApplyNow"
 		elementFind="efApplyNowButton" elementAction="eaApplyNowClick">
 	</ate:elementActionDef>
-	<ate:elementFindByXpath id="efApplyNowButton"
-		findByValue="//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied']" indexOfSameElements="0" />
+<!-- 	<ate:elementFindByXpath id="efApplyNowButton" -->
+<!-- 		findByValue="//span[@class='indeed-apply-widget indeed-apply-button-container indeed-apply-status-not-applied']" indexOfSameElements="0" /> -->
+<ate:elementFindByXpath id="efApplyNowButton"
+		findByValue="//span[contains(text(),'Apply Now')]" indexOfSameElements="0" />
 	<ate:clickAction id="eaApplyNowClick" />
 	
 	
