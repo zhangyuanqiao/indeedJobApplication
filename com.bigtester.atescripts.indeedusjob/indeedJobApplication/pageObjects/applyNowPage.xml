@@ -40,28 +40,28 @@
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efApplicantName"
 		findByValue="applicant.name"  />
-	<ate:sendKeysAction id="eaFilloutApplicantName" dataValue="Peidong Hu"/>
+	<ate:sendKeysAction id="eaFilloutApplicantName" dataValue="Fengfei Huang"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantFirstName"
 		elementFind="efApplicantFirstName" elementAction="eaFilloutApplicantFirstName">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efApplicantFirstName"
 		findByValue="applicant.firstName"  />
-	<ate:sendKeysAction id="eaFilloutApplicantFirstName" dataValue="Peidong"/>
+	<ate:sendKeysAction id="eaFilloutApplicantFirstName" dataValue="Fengfei"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantLastName"
 		elementFind="efApplicantLastName" elementAction="eaFilloutApplicantLastName">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efApplicantLastName"
 		findByValue="applicant.lastName"  />
-	<ate:sendKeysAction id="eaFilloutApplicantLastName" dataValue="Hu"/>
+	<ate:sendKeysAction id="eaFilloutApplicantLastName" dataValue="Huang"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantEmail"
 		elementFind="efApplicantEmail" elementAction="eaFilloutApplicantEmail">
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efApplicantEmail"
 		findByValue="applicant.email"  />
-	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="zhouyibhic@gmail.com"/>
+	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="fengfei2med@gmail.com"/>
 
 	<ate:elementActionDef id="eadFilloutApplicantPhoneNumber"
 		elementFind="efApplicantPhoneNumber" elementAction="eaFilloutApplicantPhoneNumber">
@@ -76,7 +76,7 @@
 	<ate:elementFindByName id="efApplyNowChooseFile"
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
-		fileNameWithAbsolutePath="/var/jenkins_home/peidonghu_resume_en_2018_USA_architect_devOps_noh_mymail.pdf" />
+		fileNameWithAbsolutePath="/var/jenkins_home/FengfeiClinicalScientist.doc" />
 
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
