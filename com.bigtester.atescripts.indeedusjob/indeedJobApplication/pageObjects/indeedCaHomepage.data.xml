@@ -7,29 +7,29 @@
 		TestDataContext_IdColumn="5" />
 
 	<ElementInputData FirstTimeExecution="Yes"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Research"
 		testDataContext_idColumn="1" />
 		
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="CICD"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Scientist"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="1" />
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps Lead"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Trial"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="2" />
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps Automation"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Management"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="3" />
 
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="DevOps Remote"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Pharma Clinical"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="4" />
 		
 		<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Mandarin DevOps"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Medical Clinical"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="5" />
 
