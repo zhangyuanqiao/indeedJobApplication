@@ -7,7 +7,7 @@
 		TestDataContext_IdColumn="5" />
 
 	<ElementInputData FirstTimeExecution="Yes"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Research"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Medical Scientist"
 		testDataContext_idColumn="1" />
 		
 	<ElementInputData FirstTimeExecution="No"
