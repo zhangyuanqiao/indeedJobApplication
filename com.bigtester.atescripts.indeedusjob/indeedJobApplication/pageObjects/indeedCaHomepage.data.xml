@@ -11,25 +11,25 @@
 		testDataContext_idColumn="1" />
 		
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Scientist"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Medical Affair"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="1" />
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Trial"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Medical Adviser"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="2" />
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Clinical Management"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Medical Science Liaison"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="3" />
 
 	<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Pharma Clinical"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="MSL"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="4" />
 		
 		<ElementInputData FirstTimeExecution="No"
-		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Medical Clinical"
+		stepEIDsetID="jobKeyWord" dataName="JobSearchKeyWord" dataValue="Molecular biology"
 		testDataContext_idColumn="1" repeatStepName="stepRepeatApplyOtherKeywordsJobs"
 		iteration="5" />
 
