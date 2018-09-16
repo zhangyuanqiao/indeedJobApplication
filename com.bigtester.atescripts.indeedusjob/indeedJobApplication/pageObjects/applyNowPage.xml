@@ -217,6 +217,13 @@
  		findByValue="//select[starts-with(@id,'select')]"  indexOfSameElements="2"/>
  	<ate:dropdownListSelectAction id="eaSelections2" selectionType="INDEX" selections="1"/>
 
+<ate:elementActionDef id="eadSelectDoctorateRadio"
+ 		elementFind="efQ0Selections0" elementAction="eaSelections0">
+ 	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efDoctorateRaido"
+		findByValue="//input[@type='radio' and contains(text(),'Doctor')]" />
+	<ate:clickAction id="eaDoctorate" />
+
 
 
 	<ate:elementActionDef id="eadAcceptAlertInFocus" elementFind="efAlertInFocus" elementAction="eaAcceptAlert" />

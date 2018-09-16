@@ -281,6 +281,12 @@
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 
+		<ate:elementStep id="stepClickDoctorRadio"
+			stepDescription="stepSelectDoctorateRadio" stepName="stepSelectDoctorateRadio"
+			targetStep="false" elementActionDef="eadSelectDoctorateRadio" optionalStep="true"
+			searchOnlyOnPreviousSuccessIFrame="true">
+		</ate:elementStep>
+
 
 		<ate:elementStep id="stepSubmitResume"
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
