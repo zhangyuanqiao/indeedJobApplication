@@ -112,6 +112,13 @@
 	<ate:elementFindByXpath id="efContinueAppButton2"
 		findByValue="//button[@id='form-action-continue']"  />
 	
+	<ate:elementActionDef id="eadSelectDoctorateRadio"
+ 		elementFind="efDoctorateRaido" elementAction="eaDoctorate">
+ 	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efDoctorateRaido"
+		findByValue="//input[@type='radio' and contains(text(),'Doctor')]" />
+	<ate:clickAction id="eaDoctorate" />
+
 	
 	
 	<ate:elementActionDef id="eadAnswerYesForQ0"
