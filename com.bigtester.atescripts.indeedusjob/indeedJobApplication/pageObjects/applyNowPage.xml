@@ -218,7 +218,7 @@
  	<ate:dropdownListSelectAction id="eaSelections2" selectionType="INDEX" selections="1"/>
 
 <ate:elementActionDef id="eadSelectDoctorateRadio"
- 		elementFind="efQ0Selections0" elementAction="eaSelections0">
+ 		elementFind="efDoctorateRaido" elementAction="eaDoctorate">
  	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efDoctorateRaido"
 		findByValue="//input[@type='radio' and contains(text(),'Doctor')]" />
