@@ -248,6 +248,12 @@
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 
+		<ate:elementStep id="stepClickDoctorRadio"
+			stepDescription="stepSelectDoctorateRadio" stepName="stepSelectDoctorateRadio"
+			targetStep="false" elementActionDef="eadSelectDoctorateRadio" optionalStep="true"
+			searchOnlyOnPreviousSuccessIFrame="true">
+		</ate:elementStep>
+		
 		<ate:elementStep id="stepAnswerIntQ0Input"
 			stepDescription="stepAnswerIntQ0Input" stepName="stepAnswerIntQ0Input"
 			targetStep="false" elementActionDef="eadAnswerIntForInput0" optionalStep="true"
@@ -282,11 +288,7 @@
 			searchOnlyOnPreviousSuccessIFrame="true">
 		</ate:elementStep>
 
-		<ate:elementStep id="stepClickDoctorRadio"
-			stepDescription="stepSelectDoctorateRadio" stepName="stepSelectDoctorateRadio"
-			targetStep="false" elementActionDef="eadSelectDoctorateRadio" optionalStep="true"
-			searchOnlyOnPreviousSuccessIFrame="true">
-		</ate:elementStep>
+		
 
 		<ate:elementStep id="stepAnswerIntQ2Input-"
 			stepDescription="stepAnswerIntQ2Input-" stepName="stepAnswerIntQ2Input-"
