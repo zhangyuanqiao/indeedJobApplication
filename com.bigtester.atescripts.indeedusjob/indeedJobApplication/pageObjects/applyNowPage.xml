@@ -112,7 +112,19 @@
 	<ate:elementFindByXpath id="efContinueAppButton2"
 		findByValue="//button[@id='form-action-continue']"  />
 	
-	
+	<ate:elementActionDef id="eadSelectDoctorateRadio0"
+ 		elementFind="efDoctorateRaido0" elementAction="eaDoctorate0">
+ 	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efDoctorateRaido0"
+		findByValue="//input[../text()[contains(.,'Doctor')] and @type='radio']" />
+	<ate:clickAction id="eaDoctorate0" />
+ 	<ate:elementActionDef id="eadSelectDoctorateRadio"
+ 		elementFind="efDoctorateRaido" elementAction="eaDoctorate">
+ 	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efDoctorateRaido"
+		findByValue="//input[../text()[contains(.,'Doctor')] and @type='radio']" />
+	<ate:clickAction id="eaDoctorate" />
+
 	
 	<ate:elementActionDef id="eadAnswerYesForQ0"
 		elementFind="efQ0" elementAction="eaSelectYes">
