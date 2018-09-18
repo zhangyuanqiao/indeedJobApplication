@@ -117,7 +117,7 @@
  		elementFind="efDoctorateRaido0" elementAction="eaDoctorate0">
  	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efDoctorateRaido0"
-		findByValue="//input[@type='radio' and contains(text(),'Doctor')]" />
+		findByValue="//input[../text()[contains(.,'Doctor')] and @type='radio']" />
 	<ate:clickAction id="eaDoctorate0" />
 
 
@@ -125,7 +125,7 @@
  		elementFind="efDoctorateRaido" elementAction="eaDoctorate">
  	</ate:elementActionDef>
 	<ate:elementFindByXpath id="efDoctorateRaido"
-		findByValue="//input[@type='radio' and contains(text(),'Doctor')]" />
+		findByValue="//input[../text()[contains(.,'Doctor')] and @type='radio']" />
 	<ate:clickAction id="eaDoctorate" />
 
 
