@@ -77,12 +77,6 @@
 		findByValue="resume"  />
 	<ate:uploadFileAction id="eaApplyChooseFile"	
 		fileNameWithAbsolutePath="/var/jenkins_home/FengfeiMedicalAffair.doc" />
-
-	<ate:elementStep id="stepClickDoctorRadio0"
-			stepDescription="stepSelectDoctorateRadio0" stepName="stepSelectDoctorateRadio0"
-			targetStep="false" elementActionDef="eadSelectDoctorateRadio0" optionalStep="true"
-			searchOnlyOnPreviousSuccessIFrame="true">
-		</ate:elementStep>
 	
 	<ate:elementActionDef id="eadFilloutMessage"
 		elementFind="efMessage" elementAction="eaMessageSent">
@@ -160,11 +154,18 @@
 		findByValue="//input[@type='radio' and (@value='0' or @value='yes' or @value='YES' or @value='Yes')]"  indexOfSameElements="2"/>
 	<ate:clickAction id="eaClickYes2" />
 
-	<ate:elementStep id="stepClickDoctorRadio"
-			stepDescription="stepSelectDoctorateRadio" stepName="stepSelectDoctorateRadio"
-			targetStep="false" elementActionDef="eadSelectDoctorateRadio" optionalStep="true"
-			searchOnlyOnPreviousSuccessIFrame="true">
-		</ate:elementStep>
+	<<ate:elementActionDef id="eadSelectDoctorateRadio0"
+ 		elementFind="efDoctorateRaido0" elementAction="eaDoctorate0">
+ 	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efDoctorateRaido0"
+		findByValue="//input[../text()[contains(.,'Doctor')] and @type='radio']" />
+	<ate:clickAction id="eaDoctorate0" />
+ 	<ate:elementActionDef id="eadSelectDoctorateRadio"
+ 		elementFind="efDoctorateRaido" elementAction="eaDoctorate">
+ 	</ate:elementActionDef>
+	<ate:elementFindByXpath id="efDoctorateRaido"
+		findByValue="//input[../text()[contains(.,'Doctor')] and @type='radio']" />
+	<ate:clickAction id="eaDoctorate" />
 
 	
 	<ate:elementActionDef id="eadAnswerIntForInput0"
