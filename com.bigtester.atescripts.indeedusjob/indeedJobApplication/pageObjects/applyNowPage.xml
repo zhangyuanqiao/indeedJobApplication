@@ -83,7 +83,7 @@
 	</ate:elementActionDef>
 	<ate:elementFindByName id="efMessage"
 		findByValue="applicant.applicationMessage"  />
-	<ate:assignValueAction id="eaMessageSent" dataValue=" I sell only the result. "/>
+	<ate:assignValueAction id="eaMessageSent" dataValue=" I sell only the result. NOTE: This resume is submitted by ATE software robot."/>
 
 	<ate:elementActionDef id="eadSubmitResume"
 		elementFind="efResumeSubmitButton" elementAction="eaClickSubmitButton">
